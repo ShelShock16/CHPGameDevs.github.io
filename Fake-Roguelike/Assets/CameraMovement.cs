@@ -5,16 +5,15 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform lookAt;
-    public float boundX = 0.8f;
-    public float boundY = 0.4f;
+    public float boundX = 0.4f;
+    public float boundY = 0.2f;
 
     void LateUpdate()
     {
-
         Vector3 delta = Vector3.zero;
 
         float deltaX = lookAt.position.x - transform.position.x;
-        if(deltaX > boundX && lookAt.position.x < 31.34 || deltaX < -boundX && lookAt.position.x > -0.78)
+        if(deltaX > boundX && lookAt.position.x < 30.94|| deltaX < -boundX && lookAt.position.x > 2)
         {
             if (transform.position.x < lookAt.position.x)
             {
@@ -27,7 +26,7 @@ public class CameraMovement : MonoBehaviour
         }
 
         float deltaY = lookAt.position.y - transform.position.y;
-        if (deltaY > boundY && lookAt.position.y < 1.38 || deltaY < -boundY && lookAt.position.y > -2)
+        if (deltaY > boundY && lookAt.position.y < 0.99 || deltaY < -boundY && lookAt.position.y > -1.6)
         {
             if (transform.position.y < lookAt.position.y)
             {

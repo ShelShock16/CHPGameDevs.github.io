@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class Player : MonoBehaviour
     public Animator anim;
     public Sprite lookRight, lookLeft, lookUp, lookDown, lvl1foreground;
     public Animation walkFront, walkBack, walkRight, walkLeft;
+    public int hp = 4;
+    private int frames = 0;
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
-
 
     private void Start()
     {
@@ -25,6 +27,11 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (hp == 0)
+        {
+            SceneManager.UnloadSceneAsync("Level 1");
+            SceneManager.LoadSceneAsync("Game Over");
+        }
 
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
@@ -100,6 +107,33 @@ public class Player : MonoBehaviour
         } else
         {
             render.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Player Above");
+        }
+
+        if (frames > 0)
+        {
+            frames++;
+            if (frames % 16 == 0) {
+                render.color = new Color(255, 255, 255, 255);
+            } else if (frames % 8 == 0)
+            {
+                render.color = new Color(255, 0, 0, 128);
+            }
+        }
+
+        if (frames == 60)
+        {
+            frames = 0;
+            render.color = new Color(255, 255, 255, 255);
+        }
+
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Enemy") && frames == 0)
+        {
+            hp = hp - 1 ;
+            frames++;
         }
     }
 }

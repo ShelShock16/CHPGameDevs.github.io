@@ -53,11 +53,14 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Retry.cs" />
     <Compile Include="Assets\Weapon.cs" />
     <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\HP.cs" />
     <Compile Include="Assets\CameraMovement.cs" />
-    <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\DogAI.cs" />
+    <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\Level1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

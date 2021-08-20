@@ -9,13 +9,14 @@ public class Weapon : MonoBehaviour
     private int frames = 0;
     void Update()
     {
-        frames++;
+        if (frames > 0 && frames < 120) frames++;
+        if (frames == 120) frames = 0;
 
-            if (frames % 120 == 0 && (Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3") || Input.GetButton("Jump")))
-        {
+            if (frames == 0 && (Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3") || Input.GetButton("Jump")))
+            {
+            frames++;
             Shoot();
-            frames = 0;
-        }
+            }
 
 
     }
