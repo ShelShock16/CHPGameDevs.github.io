@@ -7,11 +7,8 @@ public class DogAI : MonoBehaviour
 
     public float speed, vision;
     public Transform player;
-
-    void Start()
-    {
-        
-    }
+    public Transform dog;
+    public GameObject explosion;
 
     void Update()
     {
@@ -37,6 +34,7 @@ public class DogAI : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Bullet"))
         {
+            Instantiate(explosion, dog.position, dog.rotation);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

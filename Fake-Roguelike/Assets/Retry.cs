@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Retry : MonoBehaviour
 {
+    int frames = 0;
 
     void Update()
     {
-        if (Input.anyKey)
+
+        if (frames < 241) frames++;
+
+        if (Input.anyKey && frames > 240)
         {
             SceneManager.UnloadSceneAsync("Game Over");
             SceneManager.LoadSceneAsync("Level 1");
