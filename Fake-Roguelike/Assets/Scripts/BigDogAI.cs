@@ -35,7 +35,7 @@ public class BigDogAI : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Bullet"))
         {
-            Instantiate(explosion, dog.position, dog.rotation);
+            Instantiate(explosion, collision.gameObject.transform.position, dog.rotation);
             Destroy(collision.gameObject);
         }
     }

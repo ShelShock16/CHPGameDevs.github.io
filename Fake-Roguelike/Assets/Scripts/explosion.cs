@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class explosion : MonoBehaviour
+public class Explosion : MonoBehaviour
 
 {
-    int frames = 0;
+    float time = 0;
 
     void Update()
     {
-        frames++;
-        if (frames == 144) Destroy(gameObject);
+        time += Time.deltaTime;
+        if (time > 0.25) Destroy(gameObject);
     }
 }

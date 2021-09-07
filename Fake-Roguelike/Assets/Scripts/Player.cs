@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public Sprite lookRight, lookLeft, lookUp, lookDown, lvl1foreground;
     public Animation walkFront, walkBack, walkRight, walkLeft;
     public int hp = 4;
-    private int frames = 0;
+    private float time = 0, redTime = 0;
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
@@ -109,20 +109,23 @@ public class Player : MonoBehaviour
             render.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Player Above");
         }
 
-        if (frames > 0)
+        if (time > 0)
         {
-            frames++;
-            if (frames % 16 == 0) {
+            time += Time.deltaTime;
+            redTime += Time.deltaTime;
+            render.color = new Color(255, 0, 0, 128);
+            if (redTime > 0.25 && redTime < 0.5) {
                 render.color = new Color(255, 255, 255, 255);
-            } else if (frames % 8 == 0)
+            } else if (redTime > 0.5)
             {
                 render.color = new Color(255, 0, 0, 128);
+                redTime = 0;
             }
         }
 
-        if (frames == 60)
+        if (time > 1)
         {
-            frames = 0;
+            time = 0;
             render.color = new Color(255, 255, 255, 255);
         }
 
@@ -130,10 +133,10 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Enemy") && frames == 0)
+        if (collision.gameObject.tag.Equals("Enemy") && time == 0)
         {
             hp = hp - 1 ;
-            frames++;
+            time += Time.deltaTime;
         }
     }
 }

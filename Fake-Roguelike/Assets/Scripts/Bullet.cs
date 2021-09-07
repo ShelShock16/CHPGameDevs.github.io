@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
         public SpriteRenderer render;
         public float speed = 20f;
         public Rigidbody2D rb;
-        private int frames = 0;
+        private float time = 0;
 
     void Start()
     {
@@ -40,8 +40,8 @@ public class Bullet : MonoBehaviour
 
     void Update ()
     {
-        frames++;
-        if (frames > 960)
+        time += Time.deltaTime;
+        if (time > 4)
         {
             Destroy(gameObject);
         }

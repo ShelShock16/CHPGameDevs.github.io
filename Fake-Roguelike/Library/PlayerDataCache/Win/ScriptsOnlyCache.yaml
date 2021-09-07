@@ -5,11 +5,12 @@ ScriptsOnlyBuild:
     - Bullet
     - CameraMovement
     - DogAI
+    - Explosion
     - HP
+    - MAINMENU
     - Player
     - Retry
     - Weapon
-    - explosion
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -37,7 +38,67 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
+    Assets/MENU/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1584}
+    - Class: 114
+      Script: {instanceID: 1772}
+    - Class: 114
+      Script: {instanceID: 2282}
+    - Class: 114
+      Script: {instanceID: 2698}
+    - Class: 114
+      Script: {instanceID: 2862}
+    - Class: 114
+      Script: {instanceID: 3078}
+    - Class: 114
+      Script: {instanceID: 3322}
+    - Class: 114
+      Script: {instanceID: 3434}
+    - Class: 114
+      Script: {instanceID: 5534}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Game Over.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -60,7 +121,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2440}
+      Script: {instanceID: 2510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -107,21 +168,21 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1706}
+      Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 3736}
+      Script: {instanceID: 3804}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 4212}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4460}
+      Script: {instanceID: 4528}
     - Class: 114
-      Script: {instanceID: 5440}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -570,7 +631,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: explosion
+    className: Explosion
   - hash:
       serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
@@ -681,6 +742,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MAINMENU
+  - hash:
+      serializedVersion: 2
       Hash: f1b001768d824a32bfca2aded25d968f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -713,4 +780,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Level 1.unity
   - Assets/Scenes/Game Over.unity
-  playerPath: C:/Users/manuc/Desktop/Fake-Roguelike.exe
+  - Assets/MENU/Menu.unity
+  playerPath: C:/Users/manuc/Fake-Roguelike.exe
