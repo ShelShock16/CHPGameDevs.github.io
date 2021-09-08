@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BigDogAI : MonoBehaviour
 {
-
+    public int doglife = 5;
     public float speed, vision;
     public Transform player;
     public Transform dog;
@@ -37,6 +37,9 @@ public class BigDogAI : MonoBehaviour
         {
             Instantiate(explosion, collision.gameObject.transform.position, dog.rotation);
             Destroy(collision.gameObject);
+            doglife -= 1;
+            if (doglife == 0) Destroy(gameObject);
+
         }
     }
 

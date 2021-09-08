@@ -41,11 +41,19 @@ public class Bullet : MonoBehaviour
     void Update ()
     {
         time += Time.deltaTime;
-        if (time > 4)
+        if (time > 1.2)
         {
             Destroy(gameObject);
         }
 
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "floor")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 }

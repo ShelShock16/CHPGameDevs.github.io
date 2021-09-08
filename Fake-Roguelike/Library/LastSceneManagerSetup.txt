@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Level 1.unity
+- path: Assets/Scenes/ProgramationGame.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -7,7 +7,11 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/MENU/Menu.unity
+- path: Assets/Scenes/Level 1.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Menu.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
