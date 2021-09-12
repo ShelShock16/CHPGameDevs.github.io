@@ -5,25 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    public int numScene;
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene()) ;
 
-        if (collision.gameObject.tag == "Bullet")
-        {
-            SceneManager.UnloadSceneAsync("Level 1");
-            SceneManager.LoadSceneAsync("ProgramationGame");
-        }
+        SceneManager.LoadScene(numScene);
+        
+
     }
+
 }

@@ -15,8 +15,8 @@ public class CubeMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lifes.text = "LIVES " + (int)hp;
-        point.text = "POINTS " + (int)points;
+        lifes.text = "" + (int)hp;
+        point.text = "" + (int)points;
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class CubeMovement : MonoBehaviour
         {
             hp = hp - 1;
             Debug.Log("hp = " + hp);
-            lifes.text = "LIVES " + (int)hp;
+            lifes.text = "" + (int)hp;
 
         }
 
@@ -44,7 +44,7 @@ public class CubeMovement : MonoBehaviour
         {
             points += 1;
             Debug.Log("points = " + points);
-            point.text = "POINTS " + (int)points;
+            point.text = "" + (int)points;
         }
     }
     }

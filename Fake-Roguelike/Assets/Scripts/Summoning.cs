@@ -9,6 +9,8 @@ public class Summoning : MonoBehaviour
     public float SummonTime=2;
     public float SummonTimeInitial;
     public GameObject objeto;
+    
+
     void Start()
     {
         SummonTimeInitial = SummonTime;   
@@ -20,7 +22,7 @@ public class Summoning : MonoBehaviour
 
         float x = Time.time;
 
-        if (x > SummonTime)
+        if (x > SummonTime )
         {
             float random = Random.Range(-8,8);
             SummonTime = SummonTime + SummonTimeInitial;
