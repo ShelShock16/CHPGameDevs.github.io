@@ -21,10 +21,13 @@ public class NextLevel : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene()) ;
-
-        SceneManager.LoadScene(numScene);
         
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+
+            SceneManager.LoadScene(numScene);
+        }
 
     }
 

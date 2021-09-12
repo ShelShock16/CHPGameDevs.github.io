@@ -1,21 +1,21 @@
 sceneSetups:
 - path: Assets/Scenes/ProgramationGame.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Game Over.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Level 1.unity
-  isLoaded: 1
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Menu.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/LevelSelector.unity
   isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Menu.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Game Over.unity
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
