@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class CubeMovement : MonoBehaviour
 {
 
@@ -26,7 +27,7 @@ public class CubeMovement : MonoBehaviour
         x *= Time.deltaTime;
         transform.Translate(x, 0f,0f);
 
-        if (hp == 0) Destroy(this.gameObject);
+        if (hp == 0) SceneManager.LoadScene(5);
     }
 
 

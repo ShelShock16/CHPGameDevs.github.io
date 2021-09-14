@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Retry : MonoBehaviour
 {
     float time = 0;
+    public int numScene;
 
     void Update()
     {
@@ -14,8 +15,9 @@ public class Retry : MonoBehaviour
 
         if (Input.anyKey && time > 3)
         {
-            SceneManager.UnloadSceneAsync("Game Over");
-            SceneManager.LoadSceneAsync("Level 1");
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+
+            SceneManager.LoadScene(numScene);
         }
     }
 

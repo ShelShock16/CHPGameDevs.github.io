@@ -13,7 +13,8 @@ public class Summoning : MonoBehaviour
 
     void Start()
     {
-        SummonTimeInitial = SummonTime;   
+        SummonTimeInitial = SummonTime;
+        SummonTime = Time.time;
     }
 
     // Update is called once per frame

@@ -15,11 +15,11 @@ public class StarsMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(-160 * Time.deltaTime, 0, 0);
-
-        if (gameObject.transform.position.x<-3840)
+        
+        if (gameObject.transform.position.x < -1920f)
         {
-            Destroy(gameObject);
-            Instantiate(stars, new Vector3(3840, 686.0004f, 0), Quaternion.Euler(0, 0, 0));
+            transform.Translate(7680, 0, 0);
+            
         }
     }
 }
