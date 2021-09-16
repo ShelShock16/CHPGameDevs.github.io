@@ -19,7 +19,7 @@ public class CheckBox : MonoBehaviour
     {
         if (btn.isOn)
         {
-            lang.text = "Espaniol";
+            lang.text = "Esp";
             SOUND.text = "SONIDO";
             OPTIONS.text = "OPCIONES";
             RES.text = "RESOLUCION";
@@ -28,7 +28,7 @@ public class CheckBox : MonoBehaviour
         
         else
         {
-            lang.text = "English";
+            lang.text = "Eng";
             SOUND.text = "SOUND";
             OPTIONS.text = "OPTIONS";
             RES.text = "RESOLUTION";

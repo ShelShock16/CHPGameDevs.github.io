@@ -8,7 +8,7 @@ public class menu: MonoBehaviour
    public void PlayGame()
     {
         SceneManager.LoadScene(4);
-        SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
 
     

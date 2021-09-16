@@ -5,8 +5,9 @@ using UnityEngine;
 public class StarsMovement : MonoBehaviour
 {
 
-    private float time = 0;
-    public GameObject stars;
+    public Transform delimiter_1;
+    public Transform delimiter_2;
+   
 
     void Start()
     {
@@ -14,11 +15,11 @@ public class StarsMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(-160 * Time.deltaTime, 0, 0);
+        transform.Translate(-100 * Time.deltaTime, 0, 0);
         
-        if (gameObject.transform.position.x < -1920f)
+        if (gameObject.transform.position.x < delimiter_1.transform.position.x)
         {
-            transform.Translate(7680, 0, 0);
+            transform.Translate(delimiter_2.transform.position.x, 0f,0f);
             
         }
     }
