@@ -24,8 +24,6 @@ public class NextLevel : MonoBehaviour
         
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
-
             SceneManager.LoadScene(numScene);
         }
 

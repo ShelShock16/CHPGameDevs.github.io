@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
+    int a=8;
+    int b = 9;
     public bool IsPaused;
     public GameObject PauseMenu;
     // Update is called once per frame
@@ -38,13 +40,13 @@ public class Pause : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(a);
     }
 
     public void lvlSelector()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("LevelSelector");
+        SceneManager.LoadScene(b);
     }
 
 }
