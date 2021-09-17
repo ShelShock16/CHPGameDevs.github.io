@@ -1,21 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Menu.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/LevelSelector.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/ProgramationGame.unity
+- path: Assets/Scenes/StoryScenes/Viar1.unity
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Level 1.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Loading Scenes/To-Menu.unity
-  isLoaded: 0
-  isActive: 0
   isSubScene: 0

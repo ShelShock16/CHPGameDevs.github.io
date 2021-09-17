@@ -12,13 +12,28 @@ public class CheckBox : MonoBehaviour
     void Start()
     {
         
+        if (PlayerPrefs.GetInt("Lang") != 0)
+        {
+            PlayerPrefs.SetInt("Lang", 1);
+            btn.isOn = true;
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Lang", 0);
+            btn.isOn = false;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+
         if (btn.isOn)
         {
+            PlayerPrefs.SetInt("Lang", 1);
             lang.text = "Esp";
             SOUND.text = "SONIDO";
             OPTIONS.text = "OPCIONES";
@@ -28,6 +43,7 @@ public class CheckBox : MonoBehaviour
         
         else
         {
+            PlayerPrefs.SetInt("Lang", 0);
             lang.text = "Eng";
             SOUND.text = "SOUND";
             OPTIONS.text = "OPTIONS";

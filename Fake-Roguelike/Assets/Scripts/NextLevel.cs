@@ -25,6 +25,7 @@ public class NextLevel : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(numScene);
+            PlayerPrefs.SetInt("LockedLvl2", 0);
         }
 
     }
