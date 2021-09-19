@@ -20,6 +20,12 @@ TextureImporter:
   - first:
       213: 1663659671258945594
     second: bullets_7
+  - first:
+      213: 5895032775111214156
+    second: green_2
+  - first:
+      213: 592955695280212857
+    second: green_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -272,6 +278,48 @@ TextureImporter:
       bones: []
       spriteID: a38588418a1861710800000000000000
       internalID: 1663659671258945594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c440ac3631d5fc150800000000000000
+      internalID: 5895032775111214156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bc8b0301a9a3800800000000000000
+      internalID: 592955695280212857
       vertices: []
       indices: 
       edges: []

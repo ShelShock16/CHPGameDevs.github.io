@@ -139,4 +139,5 @@ public class Player : MonoBehaviour
             time += Time.deltaTime;
         }
     }
-}
+
+}   
