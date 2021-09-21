@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+[System.Serializable]
+public class Dialogue : MonoBehaviour
+{
+
+    public string name;
+
+    [TextArea(3, 10)]//3 renglones 10 de ancho
+
+    public string[] sentences;//array de texto
+
+}

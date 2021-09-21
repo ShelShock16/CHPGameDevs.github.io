@@ -23,7 +23,7 @@ public class GreenBulletScript : MonoBehaviour
 
     private void OnCollisionStay2D (Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player") || collision.gameObject.tag.Equals("Bullet"))
+        if (collision.gameObject.tag.Equals("Player") || collision.gameObject.tag.Equals("Bullet") || collision.gameObject.tag.Equals("floor"))
         {
             Destroy(gameObject);
         }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7132054359476776941}
   - component: {fileID: 7132054359476776936}
   - component: {fileID: -229176305290792490}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: green_bullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -117,7 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c5e3a208862224cbe7dd2ac4f09185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
   time: 0
 --- !u!61 &7132054359476776936
 BoxCollider2D:
@@ -165,4 +164,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
