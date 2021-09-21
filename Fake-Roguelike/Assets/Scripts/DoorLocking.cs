@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DoorLocking : MonoBehaviour
 {
+
+    public string LockedLvlx;
     // Start is called before the first frame update
     void Start()
     {
-        int Locked1 = PlayerPrefs.GetInt("LockedLvl2");
+        int Locked1 = PlayerPrefs.GetInt(LockedLvlx);
         if (Locked1 == 0) Destroy(this.gameObject); 
     }
 

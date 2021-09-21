@@ -7,6 +7,10 @@ public class menu: MonoBehaviour
     // Start is called before the first frame update
    public void PlayGame()
     {
+
+        PlayerPrefs.SetInt("LockedLvl2",1);
+
+
         SceneManager.LoadScene(6);
         
     }
