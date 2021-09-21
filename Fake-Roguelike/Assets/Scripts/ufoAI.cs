@@ -5,9 +5,9 @@ using UnityEngine;
 public class ufoAI : MonoBehaviour
 {
 
-    public float speed, vision, range, time=0;
+    public float speed, vision, time=0;
     public Transform player, ufo, shootingPoint;
-    public GameObject explosion, bullet, bulletOrigin;
+    public GameObject explosion, bullet;
 
     void Update()
     {
@@ -16,16 +16,15 @@ public class ufoAI : MonoBehaviour
         if (distanceFromPlayer < vision)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, abovePlayer, speed * Time.deltaTime);
+            if (time == 0)
+            {
+                time += Time.deltaTime;
+                Instantiate(bullet, shootingPoint.position, shootingPoint.rotation);
+            }
         }
 
         if (time > 0 && time < 0.8) time += Time.deltaTime;
         if (time > 0.8) time = 0;
-
-        if (time == 0)
-        {
-            time += Time.deltaTime;
-            Instantiate(bullet, shootingPoint.position, shootingPoint.rotation);
-        }
 
     }
 

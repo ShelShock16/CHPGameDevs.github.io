@@ -5,15 +5,8 @@ using UnityEngine;
 public class GreenBulletScript : MonoBehaviour
 {
 
-    public float speed, time=0;
+    public float time=0;
     Transform player;
-    private Vector2 aim;
-
-    private void Start()
-    {
-        //player = GameObject.FindGameObjectWithTag("Player").transform;
-        //aim = player.position;
-    }
 
     private void Update()
     {
@@ -30,10 +23,12 @@ public class GreenBulletScript : MonoBehaviour
 
     private void OnCollisionStay2D (Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player") || collision.gameObject.tag.Equals("Bullet"))
         {
             Destroy(gameObject);
         }
+
+
     }
 
 }

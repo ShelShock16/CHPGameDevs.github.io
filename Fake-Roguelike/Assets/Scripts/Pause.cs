@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    int a=8;
+    int a = 8;
     int b = 9;
     public bool IsPaused;
     public GameObject PauseMenu;
@@ -28,8 +28,6 @@ public class Pause : MonoBehaviour
         {
             IsPaused = !IsPaused;
         }
-
-
     }
 
     public void Resume()
