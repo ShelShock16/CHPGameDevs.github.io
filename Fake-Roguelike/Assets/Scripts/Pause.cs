@@ -8,12 +8,12 @@ public class Pause : MonoBehaviour
 {
     int a = 8;
     int b = 9;
-    public bool IsPaused;
+    public static bool isPaused = false;
     public GameObject PauseMenu;
     // Update is called once per frame
     void Update()
     {
-        if (IsPaused)
+        if (isPaused)
         {
             PauseMenu.SetActive(true);
             Time.timeScale = 0f;
@@ -26,13 +26,13 @@ public class Pause : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            IsPaused = !IsPaused;
+            isPaused = !isPaused;
         }
     }
 
     public void Resume()
     {
-        IsPaused = !IsPaused;
+        isPaused = !isPaused;
     }
 
     public void Menu()

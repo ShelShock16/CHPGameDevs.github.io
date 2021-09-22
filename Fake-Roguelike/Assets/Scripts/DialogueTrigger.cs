@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public bool start = true;
-    public bool dialogueActive = false;
+    public static bool start = true;
+    public static bool dialogueActive = false;
     public GameObject dialogueCanvas;
     public Animator animator;
-  
+    public static Dialogue dialogue;
 
 
-  
+    public void Start()
+    {
+        //dialogueActive = !dialogueActive;
+    }
+
     public void Update()
     {
+        if (dialogueActive && start)
+        {
+            TriggerDialogue();
+            start = false;
+        }
+
         //interface management
         if (dialogueActive)
         {
@@ -27,19 +37,8 @@ public class DialogueTrigger : MonoBehaviour
             dialogueCanvas.SetActive(false);
           
         }
-        
-        if (Input.GetButtonUp("Debug"))
-        {
-            dialogueActive = !dialogueActive;
-        }
 
-        //text management
-        if (Input.GetButtonUp("Debug") && dialogueActive)
-        {
-            TriggerDialogue();
-        }
-
-        if (Input.GetButtonUp("Interact") && dialogueActive)
+        if (Input.GetButtonUp("Interact") && dialogueActive && !Pause.isPaused)
         {
             TriggerNextSentence();
             if (FindObjectOfType<DialogueManager>().end)
@@ -48,8 +47,6 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
     }
-
-    public Dialogue dialogue;
 
     public void TriggerDialogue()
     {

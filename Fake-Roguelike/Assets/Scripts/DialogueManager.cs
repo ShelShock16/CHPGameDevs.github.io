@@ -5,26 +5,36 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public SpriteRenderer characterPortrait;
+    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, viarPortrait;
     public Text nameText, dialogueText;
     public bool end = false;
     private Queue<string> sentences;
+    private Queue<string> names;
 
     void Start()
     {
         sentences = new Queue<string>();
+        names = new Queue<string>();
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
         end = false;
-        Debug.Log("Starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
+        Debug.Log("Starting conversation.");
+        //nameText.text = dialogue.name;
 
         sentences.Clear();
+        names.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }
+
+        foreach (string name in dialogue.names)
+        {
+            names.Enqueue(name);
         }
 
         DisplayNextSentence();
@@ -37,22 +47,47 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
+        string name = names.Dequeue();
         string sentence = sentences.Dequeue();
+        if (name == "Luciel")
+        {
+            characterPortrait.sprite = lucielPortrait;
+        } else if (name == "EO")
+        {
+            characterPortrait.sprite = eoPortrait;
+        } else if (name == "Masinha")
+        {
+            characterPortrait.sprite = masiPortrait;
+        } else if (name == "Brun")
+        {
+            characterPortrait.sprite = brunPortrait;
+        } else if (name == "Viar")
+        {
+            characterPortrait.sprite = viarPortrait;
+        }
+        Debug.Log(name);
         Debug.Log(sentence);
+        nameText.text = name;
         dialogueText.text = sentence;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(sentence, name));
     }
 
-   IEnumerator TypeSentence(string sentence)
+   IEnumerator TypeSentence(string sentence, string name)
     {
+        nameText.text = "";
         dialogueText.text = "";
-            foreach (char letter in sentence.ToCharArray())
-            {
-                dialogueText.text += letter;
-                yield return new WaitForSeconds(0.1f);
+        foreach (char letter in name.ToCharArray())
+        {
+            nameText.text += letter;
+            yield return new WaitForSeconds(0.05f);
         }
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
+
     }
 
     void EndDialogue()
