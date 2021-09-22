@@ -9,8 +9,8 @@ public class DialogueManager : MonoBehaviour
     public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, viarPortrait;
     public Text nameText, dialogueText;
     public bool end = false;
-    private Queue<string> sentences;
-    private Queue<string> names;
+    private static Queue<string> sentences;
+    private static Queue<string> names;
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
         names = new Queue<string>();
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue ()
     {
         end = false;
         Debug.Log("Starting conversation.");
@@ -27,12 +27,12 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         names.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in Dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        foreach (string name in dialogue.names)
+        foreach (string name in Dialogue.names)
         {
             names.Enqueue(name);
         }

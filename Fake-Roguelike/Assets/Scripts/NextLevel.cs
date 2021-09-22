@@ -9,53 +9,74 @@ public class NextLevel : MonoBehaviour
     public bool talked = false;
     public int numScene;
     public GameObject Player;
+    public Transform transform;
+    public float time = 0;
 
     void Update()
     {
         if (talked && !DialogueTrigger.dialogueActive)
         {
-            SceneManager.LoadScene(numScene);
-            PlayerPrefs.SetInt("LockedLvl2", 0);
+            time += Time.deltaTime;
+            transform.Translate(0, 0.07f, 0);
+            if (time > 1)
+            {
+                SceneManager.LoadScene(numScene);
+                PlayerPrefs.SetInt("LockedLvl2", 0);
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         string[] names =
         {
-            "AAAAAAA",
-            "Brun",
+            "Viar",
+            "Luciel",
+            "Luciel",
+            "Viar",
+            "Luciel",
+            "Luciel",
+            "Viar",
+            "Viar",
+            "Viar",
             "Luciel",
             "EO",
+            "Viar",
             "Masinha",
             "Masinha",
-            "Luciel",
-            "EO",
+            "Viar",
             "Masinha",
-            "Brun",
-            "Brun"
+            "Viar",
+            "Luciel"
         };
 
         string[] sentences =
         {
-            "A dónde se fue Viar?",
-            "No está.",
-            "No se supone que estaba yendo a la UTU?",
-            "Creo…",
-            "BO.",
-            "CREO QUE HAY UN PERRO EN PATINETA.",
+            "Hola!",
+            "Profe.",
+            "No vas creer lo que acabamos de ver.",
+            "El ejército de perros y hamsters?",
             "Qué?",
-            "Masi, estás bien?",
+            "Digo… Sí, eso.",
+            "Ah, sí, si no me equivoco tienen algo que ver con el examen de matemática.",
+            "Hace unas horas entraron los de 3BA al salón de eventos, y salieron esos bichos.",
+            "Supongo que muy bien no les fue.",
             "…",
-            "Estamos a unas cuadras de la UTU.",
-            "Creo que llegamos a tiempo si caminamos."
+            "Cómo llegaste acá en primer lugar?",
+            "Ni siquiera les enseñaron a volar?",
+            "SE PUEDE VOLAR?",
+            "Entonces para qué necesito un ómnibus? O un auto?",
+            "Para evitar a los hámsters voladores, obviamente.",
+            "…",
+            "Deberían entrar a la UTU, van a llegar tarde.",
+            "Y si nos enseñas a volar antes?"
         };
 
         if (collision.gameObject.tag == "Player")
         {
-            DialogueTrigger.dialogue.names = names;
-            DialogueTrigger.dialogue.sentences = sentences;
+            Dialogue.names = names;
+            Dialogue.sentences = sentences;
+            DialogueTrigger.dialogueActive = true;
             //FindObjectOfType<Dialogue>().SetDialogue(names, sentences);
-            DialogueTrigger.dialogueActive = !DialogueTrigger.dialogueActive;
             //FindObjectOfType<DialogueTrigger>().dialogueActive = !FindObjectOfType<DialogueTrigger>().dialogueActive;
             talked = true;
         }

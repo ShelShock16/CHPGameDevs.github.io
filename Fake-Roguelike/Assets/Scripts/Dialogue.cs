@@ -7,11 +7,11 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
 
-    public string[] names;
+    public static string[] names;
 
     [TextArea(3, 10)]//3 renglones 10 de ancho
 
-    public string[] sentences;//array de texto
+    public static string[] sentences;//array de texto
 
     public void SetDialogue(string[] inNames, string[] inSentences)
     {

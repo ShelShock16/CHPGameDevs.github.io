@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     public static bool dialogueActive = false;
     public GameObject dialogueCanvas;
     public Animator animator;
-    public static Dialogue dialogue;
+    public Dialogue dialogue;
 
 
     public void Start()
@@ -18,19 +18,21 @@ public class DialogueTrigger : MonoBehaviour
 
     public void Update()
     {
+
         if (dialogueActive && start)
         {
             TriggerDialogue();
             start = false;
         }
 
-        //interface management
         if (dialogueActive)
         {
             dialogueCanvas.SetActive(true);
             animator.SetBool("isOpen", true);
-            
+            Debug.Log("if dialogue active funciona");
+
         }
+
         else
         {
             animator.SetBool("isOpen", false);
@@ -44,13 +46,14 @@ public class DialogueTrigger : MonoBehaviour
             if (FindObjectOfType<DialogueManager>().end)
             {
                 dialogueActive = !dialogueActive;
+                start = true;
             }
         }
     }
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue();
     }
 
     public void TriggerNextSentence()

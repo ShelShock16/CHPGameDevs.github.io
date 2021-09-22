@@ -35,10 +35,10 @@ public class FirstDialogueTrigger : MonoBehaviour
             "Estamos a unas cuadras de la UTU.",
             "Creo que llegamos a tiempo si caminamos."
         };
-        DialogueTrigger.dialogue.names = names;
-        DialogueTrigger.dialogue.sentences = sentences;
+        Dialogue.names = names;
+        Dialogue.sentences = sentences;
+        DialogueTrigger.dialogueActive = true;
         //FindObjectOfType<Dialogue>().SetDialogue(names, sentences);
-        DialogueTrigger.dialogueActive = !DialogueTrigger.dialogueActive;
         //FindObjectOfType<DialogueTrigger>().dialogueActive = !FindObjectOfType<DialogueTrigger>().dialogueActive;
     }
 }
