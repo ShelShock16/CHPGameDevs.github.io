@@ -12,7 +12,6 @@ public class DialogueManager : MonoBehaviour
     private static Queue<string> sentences;
     private static Queue<string> names;
     public AudioSource voice;
-    public GameObject dialogo;
     public GameObject Character;
     public GameObject CharacterImage;
     void Start()
@@ -101,7 +100,6 @@ public class DialogueManager : MonoBehaviour
         end = true;
         CharacterImage.SetActive(false);
         Character.SetActive (true);
-        Destroy(dialogo);
     }
 
 }

@@ -21,7 +21,11 @@ public class NextLevel : MonoBehaviour
         {
             time += Time.deltaTime;
             transform.Translate(0, 0.025f, 0);
-           
+        }
+        if (time > 2)
+        {
+            PlayerPrefs.SetInt(LockedLvl, LckLvlStatus);
+            SceneManager.LoadScene(numScene);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -78,9 +82,6 @@ public class NextLevel : MonoBehaviour
             //FindObjectOfType<Dialogue>().SetDialogue(names, sentences);
             //FindObjectOfType<DialogueTrigger>().dialogueActive = !FindObjectOfType<DialogueTrigger>().dialogueActive;
             talked = true;
-            PlayerPrefs.SetInt(LockedLvl, LckLvlStatus);
-            SceneManager.LoadScene(numScene);
-            
         }
     }
 }
