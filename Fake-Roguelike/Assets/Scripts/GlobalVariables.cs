@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-
+    public int LockedLvl2;
     // Start is called before the first frame update
     void Start()
     {
-        int Locked1 = PlayerPrefs.GetInt("LockedLvl2", 1);
-       if(Locked1!=0) PlayerPrefs.SetInt("LockedLvl2", 1);
 
+       if(PlayerPrefs.GetInt("LockedLvl2")!= 0) PlayerPrefs.SetInt("LockedLvl2", 1);
+        LockedLvl2 = PlayerPrefs.GetInt("LockedLvl2");
     }
 
     // Update is called once per frame

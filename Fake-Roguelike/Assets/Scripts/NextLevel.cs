@@ -11,6 +11,9 @@ public class NextLevel : MonoBehaviour
     public GameObject Player;
     public Transform transform;
     public float time = 0;
+    public string LockedLvl = "LockedLvl";
+    public int LckLvlStatus=0;
+
 
     void Update()
     {
@@ -18,11 +21,7 @@ public class NextLevel : MonoBehaviour
         {
             time += Time.deltaTime;
             transform.Translate(0, 0.025f, 0);
-            if (time > 1)
-            {
-                SceneManager.LoadScene(numScene);
-                PlayerPrefs.SetInt("LockedLvl2", 0);
-            }
+           
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -79,6 +78,9 @@ public class NextLevel : MonoBehaviour
             //FindObjectOfType<Dialogue>().SetDialogue(names, sentences);
             //FindObjectOfType<DialogueTrigger>().dialogueActive = !FindObjectOfType<DialogueTrigger>().dialogueActive;
             talked = true;
+            PlayerPrefs.SetInt(LockedLvl, LckLvlStatus);
+            SceneManager.LoadScene(numScene);
+            
         }
     }
 }

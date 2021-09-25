@@ -9,8 +9,8 @@ public class DoorLocking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int Locked1 = PlayerPrefs.GetInt(LockedLvlx);
-        if (Locked1 == 0) Destroy(this.gameObject); 
+       
+        if (PlayerPrefs.GetInt(LockedLvlx) == 0) Destroy(this.gameObject); 
     }
 
     // Update is called once per frame

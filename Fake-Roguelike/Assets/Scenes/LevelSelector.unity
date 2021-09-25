@@ -501,8 +501,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c62a4d914553a4f93d5983a0c5837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talked: 0
   numScene: 7
   Player: {fileID: 629822841}
+  transform: {fileID: 0}
+  time: 0
+  LockedLvl: LockedLvl
+  LckLvlStatus: 0
 --- !u!1 &151228799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,8 +1438,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c62a4d914553a4f93d5983a0c5837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talked: 0
   numScene: 3
   Player: {fileID: 629822841}
+  transform: {fileID: 0}
+  time: 0
+  LockedLvl: LockedLvl
+  LckLvlStatus: 0
 --- !u!114 &959365983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,6 +2344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533e9dc14fa6e8d49829213e7bc5c473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LockedLvl2: 0
 --- !u!4 &1745464205
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,9 @@ public class DialogueManager : MonoBehaviour
     private static Queue<string> sentences;
     private static Queue<string> names;
     public AudioSource voice;
-
+    public GameObject dialogo;
+    public GameObject Character;
+    public GameObject CharacterImage;
     void Start()
     {
         sentences = new Queue<string>();
@@ -97,6 +99,9 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of conversation.");
         voice.Stop();
         end = true;
+        CharacterImage.SetActive(false);
+        Character.SetActive (true);
+        Destroy(dialogo);
     }
 
 }
