@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public bool end = false;
     private static Queue<string> sentences;
     private static Queue<string> names;
+    public AudioSource voice;
 
     void Start()
     {
@@ -77,22 +78,24 @@ public class DialogueManager : MonoBehaviour
     {
         nameText.text = "";
         dialogueText.text = "";
+        voice.Play();
         foreach (char letter in name.ToCharArray())
         {
             nameText.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.02f);
         }
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.03f);
         }
-
+        voice.Stop();
     }
 
     void EndDialogue()
     {
         Debug.Log("End of conversation.");
+        voice.Stop();
         end = true;
     }
 
