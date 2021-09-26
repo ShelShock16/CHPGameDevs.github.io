@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  numScene: 4
+  numScene: 3
 --- !u!4 &1929631083
 Transform:
   m_ObjectHideFlags: 0

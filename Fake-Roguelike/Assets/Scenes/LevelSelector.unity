@@ -501,11 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c62a4d914553a4f93d5983a0c5837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talked: 0
   numScene: 7
-  Player: {fileID: 629822841}
-  transform: {fileID: 0}
-  time: 0
   LockedLvl: LockedLvl
   LckLvlStatus: 0
 --- !u!1 &151228799
@@ -1438,11 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c62a4d914553a4f93d5983a0c5837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talked: 0
-  numScene: 3
-  Player: {fileID: 629822841}
-  transform: {fileID: 0}
-  time: 0
+  numScene: 10
   LockedLvl: LockedLvl
   LckLvlStatus: 0
 --- !u!114 &959365983

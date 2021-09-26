@@ -28,6 +28,11 @@ public class CubeMovement : MonoBehaviour
         transform.Translate(x, 0f,0f);
 
         if (hp == 0) SceneManager.LoadScene(5);
+
+        if(points == 10)
+        {
+            SceneManager.LoadScene(11);
+        }
     }
 
 
@@ -46,6 +51,8 @@ public class CubeMovement : MonoBehaviour
             points += 1;
             Debug.Log("points = " + points);
             point.text = "" + (int)points;
+
+
         }
     }
     }
