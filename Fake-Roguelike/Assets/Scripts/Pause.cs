@@ -38,13 +38,16 @@ public class Pause : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1.0f;
+
         SceneManager.LoadScene(a);
+        isPaused = !isPaused;
     }
 
     public void lvlSelector()
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(b);
+        isPaused = !isPaused;
     }
 
 }
