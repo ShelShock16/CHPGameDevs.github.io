@@ -13,10 +13,15 @@ public class ViarLvl1 : MonoBehaviour
     public float time = 0;
     public string LockedLvl = "LockedLvl";
     public int LckLvlStatus = 0;
-    
+    public GameObject Pl;
+    public GameObject PlIMG;
+    public Collider2D col;
 
     void Update()
     {
+
+
+
         if (talked && !DialogueTrigger.dialogueActive)
         {
             time += Time.deltaTime;
@@ -30,6 +35,10 @@ public class ViarLvl1 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        PlIMG.SetActive(true);
+        PlIMG.transform.transform.position=Pl.transform.position;
+        Pl.SetActive(false);
+        col.isTrigger=true;
         int l = PlayerPrefs.GetInt("Lang");
 
         string[] names =
@@ -69,8 +78,8 @@ public class ViarLvl1 : MonoBehaviour
             "Hace unas horas entraron los de 3BA al salón de eventos, y salieron esos bichos.",
             "Supongo que muy bien no les fue.",
             "…",
-            "Cómo llegaste acá en primer lugar?",
-            "Ni siquiera les enseñaron a volar?",
+            "¿Cómo llegaste acá en primer lugar?",
+            "¿Ni siquiera les enseñaron a volar?",
             "¿SE PUEDE VOLAR?",
             "Entonces ¿Para qué necesito un ómnibus?¿O un auto?",
             "Para evitar a los hámsters voladores, obviamente.",
