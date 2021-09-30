@@ -1331,8 +1331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  hp: 3
+  hp: 5
   points: 0
+  render: {fileID: 1178102692}
   lifes: {fileID: 433722205}
   point: {fileID: 386845612}
 --- !u!50 &1178102690

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class CubeMovement : MonoBehaviour
 {
-
+    private float time = 0, redTime = 0;
     public float speed = 10.0f;
     public int hp = 3;
     public int points = 0;
-
+    public SpriteRenderer render;
     public Text lifes;
     public Text point;
 
@@ -27,23 +27,45 @@ public class CubeMovement : MonoBehaviour
         x *= Time.deltaTime;
         transform.Translate(x, 0f,0f);
 
-        if (hp == 0) SceneManager.LoadScene(5);
+        if (hp <= 0) SceneManager.LoadScene(5);
 
         if(points == 25)
         {
             SceneManager.LoadScene(11);
+        }
+
+        if (time > 0)
+        {
+            time += Time.deltaTime;
+            redTime += Time.deltaTime;
+            render.color = new Color(255, 0, 0, 128);
+            if (redTime > 0.25 && redTime < 0.5)
+            {
+                render.color = new Color(255, 255, 255, 255);
+            }
+            else if (redTime > 0.5)
+            {
+                render.color = new Color(255, 0, 0, 128);
+                redTime = 0;
+            }
+        }
+
+        if (time > 2)
+        {
+            time = 0;
+            render.color = new Color(255, 255, 255, 255);
         }
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && time == 0)
         {
             hp = hp - 1;
             Debug.Log("hp = " + hp);
             lifes.text = "" + (int)hp;
-
+            time += Time.deltaTime;
         }
 
         if(collision.gameObject.tag == "Good")

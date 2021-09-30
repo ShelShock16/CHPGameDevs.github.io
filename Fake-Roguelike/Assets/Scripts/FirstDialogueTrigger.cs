@@ -55,12 +55,12 @@ public class FirstDialogueTrigger : MonoBehaviour
             "Wasn't he supposed to be going to UTU?",
             "I believe",
             "HEY.",
-            "I THINK THERE'S A DOG ON A SKATEBOARD.",
+            "I THINK THERE'S A SKATEBOARDING DOG.",
             "What?",
             "Masi, are you okay?",
             "…",
             "We are a few blocks from the UTU.",
-            "I think we will arrive on time if we walk."
+            "I think we will arrive on time if we start walking."
         };
 
 
