@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Enemy
+  - floor
+  - Fruit
   layers:
   - Default
   - TransparentFX

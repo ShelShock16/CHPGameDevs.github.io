@@ -138,6 +138,17 @@ public class Player : MonoBehaviour
             hp = hp - 1 ;
             time += Time.deltaTime;
         }
+
+        if (collision.gameObject.tag.Equals("Fruit") && hp<4)
+        {
+            hp += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag.Equals("Fruit") )
+        {
+           
+            Destroy(collision.gameObject);
+        }
     }
 
 }   

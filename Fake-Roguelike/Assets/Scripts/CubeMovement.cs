@@ -29,7 +29,7 @@ public class CubeMovement : MonoBehaviour
 
         if (hp == 0) SceneManager.LoadScene(5);
 
-        if(points == 10)
+        if(points == 25)
         {
             SceneManager.LoadScene(11);
         }
