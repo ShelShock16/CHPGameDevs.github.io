@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -714.89, y: 422}
+  m_AnchoredPosition: {x: -778, y: 439}
   m_SizeDelta: {x: 370.22, y: 194.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302307865
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -182,18 +182,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
-    m_FontSize: 60
-    m_FontStyle: 0
+    m_FontSize: 80
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 6
-    m_MaxSize: 60
-    m_Alignment: 0
+    m_MaxSize: 80
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 5
 --- !u!222 &302307866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.278
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -841,11 +841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b738d0cf4466be44d9a939a4cfe7eaec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SummonTime: 1
-  SummonTimeInitial: 0
-  objeto: {fileID: 0}
-  r1: -1.1
-  r2: 1.1
 --- !u!4 &1784383934
 Transform:
   m_ObjectHideFlags: 0

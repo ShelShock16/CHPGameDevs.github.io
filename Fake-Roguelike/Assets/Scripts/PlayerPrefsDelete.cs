@@ -8,6 +8,8 @@ public class PlayerPrefsDelete : MonoBehaviour
     void Start()
     {
         PlayerPrefs.DeleteKey("LockedLvl2");
+        PlayerPrefs.DeleteKey("LockedLvl3");
+        PlayerPrefs.DeleteKey("LockedLvl4");
     }
 
     // Update is called once per frame
