@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ProgramationGame.unity
+- path: Assets/Scenes/Race2DGame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
