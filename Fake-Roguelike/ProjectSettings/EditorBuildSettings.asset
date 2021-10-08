@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelector3.unity
     guid: 14640e776fbc1d743b47d3d1f7fadfaf
+  - enabled: 1
+    path: Assets/Scenes/Race2DGame.unity
+    guid: 912ea5db87e71854e8885ba94d870c9d
+  - enabled: 1
+    path: Assets/Scenes/Game Over Race.unity
+    guid: 59ba4d9765d0ff14e95bbe7b0d0d7bca
   m_configObjects: {}
