@@ -11,6 +11,7 @@ public class CarMovement : MonoBehaviour
     public static int Life=5;
     public Text txt;
     public Text txt2;
+    public int PointsMax;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,7 @@ public class CarMovement : MonoBehaviour
         txt2.text = "" + PlayerPrefs.GetInt("CarPoints");
             if (PlayerPrefs.GetInt("CarLife") == 0) SceneManager.LoadScene(15);
 
-        if (PlayerPrefs.GetInt("CarPoints") == 3)
+        if (PlayerPrefs.GetInt("CarPoints") == PointsMax)
         {
 
             PlayerPrefs.SetInt("LockedLvl3", 0);

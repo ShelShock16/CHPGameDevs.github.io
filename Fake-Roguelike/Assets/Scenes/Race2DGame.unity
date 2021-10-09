@@ -433,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9ad3b8594fbc2459ba0b952158afb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -15
   down: {fileID: 1449215642}
   up: {fileID: 1745050301}
 --- !u!114 &395358458
@@ -723,6 +724,7 @@ MonoBehaviour:
   CarLeft: {fileID: 1384757713}
   txt: {fileID: 302307865}
   txt2: {fileID: 919006406}
+  PointsMax: 20
 --- !u!61 &725674287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1215,6 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9ad3b8594fbc2459ba0b952158afb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -15
   down: {fileID: 1449215642}
   up: {fileID: 1745050301}
 --- !u!114 &1454995333
@@ -1541,6 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9ad3b8594fbc2459ba0b952158afb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -15
   down: {fileID: 1449215642}
   up: {fileID: 1745050301}
 --- !u!1 &2083186847
