@@ -30,7 +30,7 @@ public class SummoningCones : MonoBehaviour
             if ((int)random == 1) random = 0f;
             if ((int)random == 2) random = 1.1f;
             SummonTime = SummonTime + SummonTimeInitial;
-            Instantiate(objeto, new Vector2((int)random, 5f), transform.rotation);
+            Instantiate(objeto, new Vector2((int)random, 6f), transform.rotation);
 
         }
     }

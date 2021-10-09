@@ -33,7 +33,14 @@ public class CarMovement : MonoBehaviour
         }
         txt.text= ""+PlayerPrefs.GetInt("CarLife");
         txt2.text = "" + PlayerPrefs.GetInt("CarPoints");
-        if (PlayerPrefs.GetInt("CarLife") == 0) SceneManager.LoadScene(15);
+            if (PlayerPrefs.GetInt("CarLife") == 0) SceneManager.LoadScene(15);
+
+        if (PlayerPrefs.GetInt("CarPoints") == 3)
+        {
+
+            PlayerPrefs.SetInt("LockedLvl3", 0);
+            SceneManager.LoadScene(6);
+        }
     }
 
    

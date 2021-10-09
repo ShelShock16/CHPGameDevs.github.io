@@ -6,10 +6,21 @@ using UnityEngine.UI;
 public class ConeScript : MonoBehaviour
 {
     public Text txt;
+    public Sprite sp1;
+    public Sprite sp2;
+    public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        float random = Random.Range(0, 2);
+        if ((int)random == 1)
+        {
+            spriteRenderer.sprite = sp1;
+        }
+        else
+        {
+            spriteRenderer.sprite = sp2;
+        }
     }
 
     // Update is called once per frame
