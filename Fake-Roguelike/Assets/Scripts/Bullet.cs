@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletSI : MonoBehaviour
 {
         public SpriteRenderer render;
         public float speed = 20f;
@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
     void Update ()
     {
         time += Time.deltaTime;
-        if (time > 1.2)
+        if (time > 1.7)
         {
             Destroy(gameObject);
         }

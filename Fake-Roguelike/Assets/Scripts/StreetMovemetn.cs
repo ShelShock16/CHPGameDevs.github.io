@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StreetMovemetn : MonoBehaviour
 {
-
+    public int speed = -15;
     public Transform down;
     public Transform up;
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class StreetMovemetn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, -15 * Time.deltaTime, 0);
+        transform.Translate(0, speed * Time.deltaTime, 0);
 
         if (gameObject.transform.position.y < down.transform.position.y)
         {

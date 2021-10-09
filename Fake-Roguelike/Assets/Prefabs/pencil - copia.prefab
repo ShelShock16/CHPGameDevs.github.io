@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5861234675429006787}
   - component: {fileID: 8214895787059505730}
   - component: {fileID: 2979904938343778429}
-  - component: {fileID: -4208065296478875022}
+  - component: {fileID: 8732196273632045388}
   m_Layer: 8
   m_Name: pencil - copia
   m_TagString: Bullet
@@ -142,7 +142,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.035
---- !u!114 &-4208065296478875022
+--- !u!114 &8732196273632045388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5861234675429006786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9860d906b1c54e459d331fa5c0981b8, type: 3}
+  m_Script: {fileID: 11500000, guid: e6690a06dea807843a892816f2fd6dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 5861234675429006785}

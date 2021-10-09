@@ -35,7 +35,9 @@ public class ViarLvl1 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        PlIMG.SetActive(true);
+        if (collision.gameObject.tag == "Player")
+        {
+            PlIMG.SetActive(true);
         PlIMG.transform.transform.position=Pl.transform.position;
         Pl.SetActive(false);
         col.isTrigger=true;
@@ -132,7 +134,7 @@ public class ViarLvl1 : MonoBehaviour
                 talked = true;
             }
         }
-
+        }
 
     }
 }
