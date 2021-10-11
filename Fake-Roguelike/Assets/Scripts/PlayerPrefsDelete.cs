@@ -10,6 +10,10 @@ public class PlayerPrefsDelete : MonoBehaviour
         PlayerPrefs.DeleteKey("LockedLvl2");
         PlayerPrefs.DeleteKey("LockedLvl3");
         PlayerPrefs.DeleteKey("LockedLvl4");
+        PlayerPrefs.DeleteKey("LockedLvl5");
+        PlayerPrefs.DeleteKey("LockedLvl6");
+        PlayerPrefs.DeleteKey("LockedLvl7");
+        PlayerPrefs.DeleteKey("LockedLvl8");
     }
 
     // Update is called once per frame

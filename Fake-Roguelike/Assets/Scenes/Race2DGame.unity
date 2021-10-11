@@ -724,7 +724,8 @@ MonoBehaviour:
   CarLeft: {fileID: 1384757713}
   txt: {fileID: 302307865}
   txt2: {fileID: 919006406}
-  PointsMax: 20
+  PointsMax: 15
+  SceneToUnlock: 16
 --- !u!61 &725674287
 BoxCollider2D:
   m_ObjectHideFlags: 0

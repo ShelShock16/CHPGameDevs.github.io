@@ -9,6 +9,8 @@ TagManager:
   - floor
   - Fruit
   - Audio
+  - Basket
+  - wall
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Actor
   - Bullet
   - Player
-  - 
+  - Pelota
   - 
   - 
   - 

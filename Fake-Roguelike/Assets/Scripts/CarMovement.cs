@@ -12,6 +12,7 @@ public class CarMovement : MonoBehaviour
     public Text txt;
     public Text txt2;
     public int PointsMax;
+    public int SceneToUnlock=16;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class CarMovement : MonoBehaviour
         {
 
             PlayerPrefs.SetInt("LockedLvl3", 0);
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(SceneToUnlock);
         }
     }
 

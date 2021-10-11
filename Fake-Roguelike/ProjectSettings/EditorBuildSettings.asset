@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over Race.unity
     guid: 59ba4d9765d0ff14e95bbe7b0d0d7bca
+  - enabled: 1
+    path: Assets/Scenes/SpaceInvaders3.unity
+    guid: bc4623c2a41c54c4489671f3b063e7cb
   m_configObjects: {}

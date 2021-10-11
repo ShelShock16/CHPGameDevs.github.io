@@ -63,6 +63,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\ufoAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\Scripts\BulletSI.cs" />
     <Compile Include="Assets\Scripts\TimeDestroy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Scripts\StairsScript.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\ActivateMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\CubeMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\SummoningCones.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Collition.cs" />
     <Compile Include="Assets\Scripts\explosion.cs" />
+    <Compile Include="Assets\Scripts\ShoeScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\initiateTime.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
@@ -131,8 +134,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\BulletSI.cs" />
-    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Scripts\UFOSCRIPT.cs" />
+    <Compile Include="Assets\BallScript.cs" />
+    <Compile Include="Assets\PlayerAimWeapon.cs" />
+    <Compile Include="Assets\Arrow.cs" />
+    <Compile Include="Assets\BasketBallPlayerScript.cs" />
+    <Compile Include="Assets\PlataformaMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
