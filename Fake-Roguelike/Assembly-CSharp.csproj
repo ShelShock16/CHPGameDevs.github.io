@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\Collition.cs" />
     <Compile Include="Assets\Scripts\explosion.cs" />
     <Compile Include="Assets\Scripts\ShoeScript.cs" />
+    <Compile Include="Assets\Scripts\UFOFILASCRIPT.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\initiateTime.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
@@ -142,7 +143,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\UFOFILASCRIPT.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
