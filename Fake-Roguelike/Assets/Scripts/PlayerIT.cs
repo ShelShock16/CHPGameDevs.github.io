@@ -9,6 +9,7 @@ public class PlayerIT : MonoBehaviour
     public Vector2 jumpHeight;
     private RaycastHit2D hit;
     public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,10 +67,11 @@ public class PlayerIT : MonoBehaviour
         {
             SceneManager.LoadScene(17);
 
-            Destroy(this.gameObject);
         }
 
     }
+
+   
 }
 
 /*if (moveDelta.y != 0 || moveDelta.x != 0)
