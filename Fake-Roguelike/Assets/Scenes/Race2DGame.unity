@@ -725,7 +725,7 @@ MonoBehaviour:
   txt: {fileID: 302307865}
   txt2: {fileID: 919006406}
   PointsMax: 15
-  SceneToUnlock: 16
+  SceneToUnlock: 6
 --- !u!61 &725674287
 BoxCollider2D:
   m_ObjectHideFlags: 0

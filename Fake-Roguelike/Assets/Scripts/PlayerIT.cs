@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerIT : MonoBehaviour
 {
@@ -63,6 +64,8 @@ public class PlayerIT : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("Enemy") )
         {
+            SceneManager.LoadScene(17);
+
             Destroy(this.gameObject);
         }
 

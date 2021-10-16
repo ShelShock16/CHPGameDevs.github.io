@@ -29,11 +29,11 @@ public class CubeMovement : MonoBehaviour
 
         if (hp <= 0) SceneManager.LoadScene(5);
 
-        if(points == 3)
+        if(points == 15)
         {
 
             PlayerPrefs.SetInt("LockedLvl3", 0);
-            SceneManager.LoadScene(11);
+            SceneManager.LoadScene(6);
         }
 
         if (time > 0)

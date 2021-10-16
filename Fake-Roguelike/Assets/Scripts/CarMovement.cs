@@ -40,7 +40,7 @@ public class CarMovement : MonoBehaviour
         if (PlayerPrefs.GetInt("CarPoints") == PointsMax)
         {
 
-            PlayerPrefs.SetInt("LockedLvl3", 0);
+            PlayerPrefs.SetInt("LockedLvl4", 0);
             SceneManager.LoadScene(SceneToUnlock);
         }
     }
