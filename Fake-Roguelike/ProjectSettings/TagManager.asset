@@ -12,6 +12,7 @@ TagManager:
   - Basket
   - wall
   - BulletSI
+  - floor2
   layers:
   - Default
   - TransparentFX
@@ -25,8 +26,8 @@ TagManager:
   - Player
   - Pelota
   - BulletSI
-  - 
-  - 
+  - killer
+  - walls
   - 
   - 
   - 
