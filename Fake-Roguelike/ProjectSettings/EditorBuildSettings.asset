@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Game Over.unity
+    path: Assets/Scenes/GameOver/Game Over.unity
     guid: 2f42e76475f07ec4bbadfb6c0db799e8
   - enabled: 1
     path: Assets/Scenes/ProgramationGame.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelector.unity
     guid: c0bb2c31311dfa74f99dc98b3068e9fd
   - enabled: 1
-    path: Assets/Scenes/Game Over Prog.unity
+    path: Assets/Scenes/GameOver/Game Over Prog.unity
     guid: 4ff386ce3f533684b9902cd1ba066300
   - enabled: 1
     path: Assets/Scenes/Loading Scenes/To-LevelSelector.unity
@@ -51,9 +51,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Race2DGame.unity
     guid: 912ea5db87e71854e8885ba94d870c9d
   - enabled: 1
-    path: Assets/Scenes/Game Over Race.unity
+    path: Assets/Scenes/GameOver/Game Over Race.unity
     guid: 59ba4d9765d0ff14e95bbe7b0d0d7bca
   - enabled: 1
     path: Assets/Scenes/SpaceInvaders3.unity
     guid: bc4623c2a41c54c4489671f3b063e7cb
+  - enabled: 1
+    path: Assets/Scenes/IcyTower.unity
+    guid: e3dcd3eca62a9184f8a4a50fcf383d19
+  - enabled: 1
+    path: Assets/Scenes/GameOver/Game Over Space Invaders.unity
+    guid: 4f7a8510dfc9c134e816fab646a67a89
   m_configObjects: {}

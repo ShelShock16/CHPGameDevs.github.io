@@ -59,7 +59,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\BigDogAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\PlayerIT.cs" />
+    <Compile Include="Assets\Scripts\PlayerIT.cs" />
     <Compile Include="Assets\Scripts\StreetMovemetn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\ufoAI.cs" />
@@ -72,7 +72,7 @@
     <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\BasketBallPlayerScript.cs" />
-    <Compile Include="Assets\PlataformaFalling.cs" />
+    <Compile Include="Assets\Scripts\PlataformaFalling.cs" />
     <Compile Include="Assets\Scripts\Retry.cs" />
     <Compile Include="Assets\Scripts\GreenBulletScript.cs" />
     <Compile Include="Assets\Scripts\ViarLvl1.cs" />
@@ -124,6 +124,7 @@
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
     <Compile Include="Assets\Scripts\CarMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\Scripts\IcyTowerKiller.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\UFOSCRIPT.cs" />
@@ -145,7 +146,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\IcyTowerKiller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

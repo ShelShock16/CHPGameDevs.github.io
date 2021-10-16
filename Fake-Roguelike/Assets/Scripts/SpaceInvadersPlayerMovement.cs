@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class SpaceInvadersPlayerMovement : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
     public GameObject pencil;
     private float time = 0;
     public float speed = 10.0f;
+    public int life=3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +33,23 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
             time += Time.deltaTime;
             Shoot();
         }
+
+        if (life == 0)
+        {
+            SceneManager.LoadScene(18);
+        }
     }
 
     void Shoot()
     {
         Instantiate(pencil, firePoint.position, firePoint.rotation);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag=="Enemy")
+        {
+            life -= 1;
+        }
     }
 }

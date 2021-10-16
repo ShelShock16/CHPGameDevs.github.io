@@ -19,7 +19,7 @@ public class UFOSCRIPT : MonoBehaviour
         count = gameObject.transform.childCount;
         if (count == 0)
         {
-            PlayerPrefs.SetInt("LockedLvl4", 0);
+            PlayerPrefs.SetInt("LockedLvl5", 0);
             SceneManager.LoadScene(6);
         }
     }
