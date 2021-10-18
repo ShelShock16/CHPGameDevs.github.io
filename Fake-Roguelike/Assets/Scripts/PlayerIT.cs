@@ -9,6 +9,7 @@ public class PlayerIT : MonoBehaviour
     public Vector2 jumpHeight;
     private RaycastHit2D hit;
     public Animator anim;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +20,15 @@ public class PlayerIT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( floor == true)
+        if ( floor == true&& Input.GetKeyDown(KeyCode.W))
         {
-
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
             floor = false;
         }
 
         float x = Input.GetAxisRaw("Horizontal");
-        Vector3 moveDelta = new Vector3(x, 0, 0);
+        Vector3 moveDelta = new Vector3(x * speed, 0, 0);
         if (hit.collider == null)
         {
             transform.Translate(4 * moveDelta.x * Time.deltaTime, 0, 0);
