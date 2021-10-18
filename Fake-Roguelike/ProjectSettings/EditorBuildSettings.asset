@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver/Game Over Space Invaders.unity
     guid: 4f7a8510dfc9c134e816fab646a67a89
+  - enabled: 1
+    path: Assets/Scenes/GameOver/Game Over IcyTower.unity
+    guid: 26110cbd3e5dc514cb455e3bdcda6a32
   m_configObjects: {}

@@ -3160,9 +3160,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4489437680446606440, guid: 158f7284a3bc8d64082f3093ae9a7569, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489437680446606440, guid: 158f7284a3bc8d64082f3093ae9a7569, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 312705055
+      objectReference: {fileID: 0}
     - target: {fileID: 4489437680446606442, guid: 158f7284a3bc8d64082f3093ae9a7569, type: 3}
       propertyPath: m_Name
       value: big_dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489437680446606442, guid: 158f7284a3bc8d64082f3093ae9a7569, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4489437680446606442, guid: 158f7284a3bc8d64082f3093ae9a7569, type: 3}
       propertyPath: m_TagString
@@ -3357,7 +3369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talked: 0
-  numScene: 10
+  numScene: 6
   Player: {fileID: 2039083451}
   transform: {fileID: 860030377}
   time: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlataformaFalling : MonoBehaviour
 {
     public bool startfalling = false;
-    float time=3f;
+    public float time=1.5f;
     private Rigidbody2D rb;
     public float speed=5f;
     public GameObject colliderDown;
@@ -39,6 +39,10 @@ public class PlataformaFalling : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Player") )
+        {
+            startfalling = true;
+        }
+        if (collision.gameObject.tag.Equals("floor"))
         {
             startfalling = true;
         }

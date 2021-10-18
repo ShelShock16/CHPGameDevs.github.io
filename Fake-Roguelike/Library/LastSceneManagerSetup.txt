@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/IcyTower.unity
+- path: Assets/Scenes/GameOver/Game Over IcyTower.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
