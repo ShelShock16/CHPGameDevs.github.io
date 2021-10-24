@@ -12,8 +12,8 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/LevelSelector.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/LevelSelector2.unity
   isLoaded: 0
@@ -56,6 +56,14 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/IcyTower.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/ScenePicker2.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/ScenePicker.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
