@@ -7,7 +7,6 @@ using static Dialogue;
 public class ViarLvl1 : MonoBehaviour
 {
     public bool talked = false;
-    public int numScene;
     public GameObject Player;
     public Transform transform;
     public float time = 0;
@@ -19,9 +18,6 @@ public class ViarLvl1 : MonoBehaviour
 
     void Update()
     {
-
-
-
         if (talked && !DialogueTrigger.dialogueActive)
         {
             time += Time.deltaTime;
@@ -29,15 +25,15 @@ public class ViarLvl1 : MonoBehaviour
         }
         if (time > 2)
         {
-            PlayerPrefs.SetInt(LockedLvl, LckLvlStatus);
-            SceneManager.LoadScene(numScene);
+            PlayerPrefs.SetInt("Progress", 1);
+            SceneManager.LoadScene("LevelSelector");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            PlIMG.SetActive(true);
+        PlIMG.SetActive(true);
         PlIMG.transform.transform.position=Pl.transform.position;
         Pl.SetActive(false);
         col.isTrigger=true;

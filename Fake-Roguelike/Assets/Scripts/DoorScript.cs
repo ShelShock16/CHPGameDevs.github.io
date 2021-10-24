@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int numSalon;
     public GameObject Player;
     private Animator Door;
 
@@ -13,13 +13,12 @@ public class DoorScript : MonoBehaviour
         Door = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float dist = Vector3.Distance(Player.transform.position, this.transform.position);
 
 
-        if (dist <0.6f) {
+        if (dist <1f && PlayerPrefs.GetInt("Progress") == numSalon) {
 
 
             Door.SetBool("isNear", true);

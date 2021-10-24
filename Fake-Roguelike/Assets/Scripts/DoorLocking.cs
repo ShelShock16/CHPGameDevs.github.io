@@ -13,10 +13,4 @@ public class DoorLocking : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt(LockedLvlx));
         if (PlayerPrefs.GetInt(LockedLvlx) == 0) Destroy(door); 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

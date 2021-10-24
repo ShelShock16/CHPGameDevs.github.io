@@ -19,8 +19,8 @@ public class UFOSCRIPT : MonoBehaviour
         count = gameObject.transform.childCount;
         if (count == 0)
         {
-            PlayerPrefs.SetInt("LockedLvl5", 0);
-            SceneManager.LoadScene(6);
+            PlayerPrefs.SetInt("Progress", 17);
+            SceneManager.LoadScene("SalonArte");
         }
     }
 }

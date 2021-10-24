@@ -32,8 +32,8 @@ public class CubeMovement : MonoBehaviour
         if(points >= 15)
         {
 
-            PlayerPrefs.SetInt("LockedLvl3", 0);
-            SceneManager.LoadScene(6);
+            PlayerPrefs.SetInt("Progress", 13);
+            SceneManager.LoadScene("SalonProg");
         }
 
         if (time > 0)

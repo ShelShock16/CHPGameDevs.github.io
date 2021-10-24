@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public SpriteRenderer characterPortrait;
-    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, viarPortrait;
+    public string profe;
+    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, profePortrait;
     public Text nameText, dialogueText;
     public bool end = false;
     private static Queue<string> sentences;
     private static Queue<string> names;
     public AudioSource voice;
-    public GameObject Character;
-    public GameObject CharacterImage;
     void Start()
     {
         sentences = new Queue<string>();
@@ -63,9 +62,9 @@ public class DialogueManager : MonoBehaviour
         } else if (name == "Brun")
         {
             characterPortrait.sprite = brunPortrait;
-        } else if (name == "Viar")
+        } else if (name == profe)
         {
-            characterPortrait.sprite = viarPortrait;
+            characterPortrait.sprite = profePortrait;
         }
         Debug.Log(name);
         Debug.Log(sentence);
@@ -98,8 +97,6 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of conversation.");
         voice.Stop();
         end = true;
-        CharacterImage.SetActive(false);
-        Character.SetActive (true);
     }
 
 }

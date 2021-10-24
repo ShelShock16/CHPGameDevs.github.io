@@ -15,14 +15,14 @@ public class CarMovement : MonoBehaviour
     public Text txt2;
     public int PointsMax;
     public int SceneToUnlock=16;
-    // Start is called before the first frame update
+
     void Start()
     {
         PlayerPrefs.SetInt("CarLife", Life);
         PlayerPrefs.SetInt("CarPoints", 0);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (PlayerPrefs.GetInt("CarLife") == 2)
@@ -53,9 +53,8 @@ public class CarMovement : MonoBehaviour
 
         if (PlayerPrefs.GetInt("CarPoints") == PointsMax)
         {
-
-            PlayerPrefs.SetInt("LockedLvl4", 0);
-            SceneManager.LoadScene(SceneToUnlock);
+            PlayerPrefs.SetInt("Progress", 23);
+            SceneManager.LoadScene("SalonProyecto");
         }
     }
 

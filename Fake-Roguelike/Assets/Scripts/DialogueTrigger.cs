@@ -29,8 +29,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             dialogueCanvas.SetActive(true);
             animator.SetBool("isOpen", true);
-            Debug.Log("if dialogue active funciona");
-
         }
 
         else

@@ -65,4 +65,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver/Game Over IcyTower.unity
     guid: 26110cbd3e5dc514cb455e3bdcda6a32
+  - enabled: 1
+    path: Assets/Scenes/SalonADA.unity
+    guid: 76ee348b2139773438ffbf8fda046163
+  - enabled: 1
+    path: Assets/Scenes/SalonFilo.unity
+    guid: f0bfc87534263ee4799bc6113a87ea34
+  - enabled: 1
+    path: Assets/Scenes/VacioFilo.unity
+    guid: f1aaafc7d9709e5489c38693258420e9
+  - enabled: 1
+    path: Assets/Scenes/SalonMultiplat.unity
+    guid: b0967ae730480c5408e381245031b16e
+  - enabled: 1
+    path: Assets/Scenes/SalonProg.unity
+    guid: 9a34b0e66a3066f4bbd468c4f868d808
+  - enabled: 1
+    path: Assets/Scenes/SalonSocio.unity
+    guid: 5532fd8a44127164e8fb3d09e0871673
+  - enabled: 1
+    path: Assets/Scenes/SalonArte.unity
+    guid: a4d32a7b0fe53ae41838903cbbc79b24
+  - enabled: 1
+    path: Assets/Scenes/SalonNarrativa.unity
+    guid: a8c08417c7ff16f43af59e676f26882b
+  - enabled: 1
+    path: Assets/Scenes/SalonProyecto.unity
+    guid: 6f60f196e72daf14ab529bb7df0da28d
+  - enabled: 1
+    path: Assets/Scenes/SalonNeg.unity
+    guid: 07c05386c22090c489767f37f5dd1559
   m_configObjects: {}

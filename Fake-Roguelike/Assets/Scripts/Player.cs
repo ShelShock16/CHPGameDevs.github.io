@@ -17,16 +17,65 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            if (PlayerPrefs.GetInt("Progress") == 2)
+            {
+                transform.position = new Vector3(1.71f, 0.67f, 0);
+            } else if (PlayerPrefs.GetInt("Progress") == 7)
+            {
+                transform.position = new Vector3(3.37f, 0.67f, 0);
+            } else if (PlayerPrefs.GetInt("Progress") == 8)
+            {
+                transform.position = new Vector3(5.05f, 0.67f, 0);
+            }
+        }
 
+        if (SceneManager.GetActiveScene().buildIndex == 12)
+        {
+            if (PlayerPrefs.GetInt("Progress") == 14)
+            {
+                transform.position = new Vector3(7.10f, 0.67f, 0);
+            }
+            else if (PlayerPrefs.GetInt("Progress") == 15)
+            {
+                transform.position = new Vector3(5.40f, 0.67f, 0);
+            }
+            else if (PlayerPrefs.GetInt("Progress") == 17)
+            {
+                transform.position = new Vector3(3.74f, 0.67f, 0);
+            }
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 13)
+        {
+            if (PlayerPrefs.GetInt("Progress") == 21)
+            {
+                transform.position = new Vector3(7.08f, 0.67f, 0);
+            }
+            else if (PlayerPrefs.GetInt("Progress") == 23)
+            {
+                transform.position = new Vector3(5.41f, 0.67f, 0);
+            }
+            else if (PlayerPrefs.GetInt("Progress") == 24)
+            {
+                transform.position = new Vector3(3.72f, 0.67f, 0);
+            }
+        }
         render = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-
         boxCollider = GetComponent<BoxCollider2D>();
 
     }
 
     private void FixedUpdate()
     {
+        //ESTO ES UN DEBUG
+        if (Input.GetButton("Debug"))
+        {
+            PlayerPrefs.SetInt("Progress", 1);
+        }
+
         if (hp == 0)
         {
             SceneManager.UnloadSceneAsync("Level 1");
