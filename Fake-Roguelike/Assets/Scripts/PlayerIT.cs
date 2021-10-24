@@ -23,13 +23,14 @@ public class PlayerIT : MonoBehaviour
     {
         if ( floor == true && Input.GetKeyDown(KeyCode.W))
         {
-            GetComponent<Rigidbody2D>().AddForce(jumpReset, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().velocity= Vector3.zero;
             GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
             floor = false;
         }
 
         float x = Input.GetAxisRaw("Horizontal");
         Vector3 moveDelta = new Vector3(x*speed, 0, 0);
+
         if (hit.collider == null)
         {
             transform.Translate(4 * moveDelta.x * Time.deltaTime, 0, 0);

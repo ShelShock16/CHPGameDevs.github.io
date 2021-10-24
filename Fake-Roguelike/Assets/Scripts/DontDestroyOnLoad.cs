@@ -34,7 +34,7 @@ public class DontDestroyOnLoad : MonoBehaviour
         }
 
         int y = SceneManager.GetActiveScene().buildIndex;
-        if (y == a || y == b || y == c)
+        if (y == a || y == b || y == c || y == 20 || y == 21 || y == 23 || y == 24 || y == 25 || y == 26 || y == 27 || y == 28 || y == 29)
         {
             DontDestroyOnLoad(this.gameObject);
         }

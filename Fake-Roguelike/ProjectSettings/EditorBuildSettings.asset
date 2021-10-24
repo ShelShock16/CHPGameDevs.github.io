@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SalonNeg.unity
     guid: 07c05386c22090c489767f37f5dd1559
+  - enabled: 1
+    path: Assets/Scenes/Bus.unity
+    guid: c7039bf0622e8e54fb4f59ccf0dcb474
   m_configObjects: {}

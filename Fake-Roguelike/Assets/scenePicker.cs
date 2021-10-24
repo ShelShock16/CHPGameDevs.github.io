@@ -30,11 +30,11 @@ public class scenePicker : MonoBehaviour
         {
 
         }
-        ada.
+        //ada.
         if (cursor == 1)
         {
             if (PlayerPrefs.GetInt("Progress") >= 2) ada.color = new Color(255, 255, 255, 255);
-            else 
+            
         }
 
     }

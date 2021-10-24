@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -10,8 +11,8 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
     public GameObject pencil;
     private float time = 0;
     public float speed = 10.0f;
-    public int life=3;
-
+    public int life=5;
+    public Image head;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,33 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(18);
         }
+
+        if (life == 5)
+        {
+            head.fillAmount = 1;
+        }
+        if (life == 4)
+        {
+            head.fillAmount = 0.8f;
+        }
+        if (life == 3)
+        {
+            head.fillAmount = 0.6f;
+        }
+        if (life == 2)
+        {
+            head.fillAmount = 0.4f;
+        }
+        if (life == 1)
+        {
+            head.fillAmount = 0.2f;
+        }
+        if (life == 0)
+        {
+            head.fillAmount = 0f;
+        }
+
+
     }
 
     void Shoot()

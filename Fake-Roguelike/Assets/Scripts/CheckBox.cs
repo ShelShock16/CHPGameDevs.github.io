@@ -37,8 +37,8 @@ public class CheckBox : MonoBehaviour
             lang.text = "Esp";
             SOUND.text = "SONIDO";
             OPTIONS.text = "OPCIONES";
-            RES.text = "RESOLUCION";
-            VIB.text = "VIBRACION";
+            //RES.text = "RESOLUCION";
+            //VIB.text = "VIBRACION";
         }
         
         else
@@ -47,8 +47,8 @@ public class CheckBox : MonoBehaviour
             lang.text = "Eng";
             SOUND.text = "SOUND";
             OPTIONS.text = "OPTIONS";
-            RES.text = "RESOLUTION";
-            VIB.text = "VIBRATION";
+            //RES.text = "RESOLUTION";
+            //VIB.text = "VIBRATION";
         }
     }
 }
