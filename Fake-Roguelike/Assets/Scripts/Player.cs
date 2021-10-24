@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
         //ESTO ES UN DEBUG
         if (Input.GetButton("Debug"))
         {
-            PlayerPrefs.SetInt("Progress", 1);
+            PlayerPrefs.SetInt("Progress", 21);
         }
 
         if (hp == 0)

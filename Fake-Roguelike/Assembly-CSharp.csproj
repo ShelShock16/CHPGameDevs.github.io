@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\CanScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\BigDogAI.cs" />
+    <Compile Include="Assets\Scripts\BusStreetMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\PlayerIT.cs" />
     <Compile Include="Assets\Scripts\StreetMovemetn.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\BulletSI.cs" />
     <Compile Include="Assets\Scripts\TimeDestroy.cs" />
     <Compile Include="Assets\scenePicker.cs" />
+    <Compile Include="Assets\Scripts\PROGRESSCHECK.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Scripts\SocioSalon.cs" />
     <Compile Include="Assets\Scripts\StairsScript.cs" />
@@ -151,6 +153,7 @@
     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\CharImg.cs" />
+    <Compile Include="Assets\Scripts\BOLETINSCRIPT.cs" />
     <Compile Include="Assets\Scripts\StarsMovement.cs" />
     <Compile Include="Assets\Scripts\UfoScriptSI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -159,9 +162,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\BOLETINSCRIPT.cs" />
-    <Compile Include="Assets\Scripts\PROGRESSCHECK.cs" />
-    <Compile Include="Assets\Scripts\BusStreetMovement.cs" />
+    <Compile Include="Assets\levelSelectorMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
