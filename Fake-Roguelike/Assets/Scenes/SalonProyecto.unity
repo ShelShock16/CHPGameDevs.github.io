@@ -613,7 +613,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4506149060001684897, guid: 556a257ccb67c064495dd579f7cd160b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4506149060217797984, guid: 556a257ccb67c064495dd579f7cd160b, type: 3}
       propertyPath: m_Material
@@ -669,11 +669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4506149060862191098, guid: 556a257ccb67c064495dd579f7cd160b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4506149060885267504, guid: 556a257ccb67c064495dd579f7cd160b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4506149060904065512, guid: 556a257ccb67c064495dd579f7cd160b, type: 3}
       propertyPath: m_Material
@@ -1021,6 +1021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b242b590953f11499a491abbcf9c4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a: 0
 --- !u!114 &1531345224
 MonoBehaviour:
   m_ObjectHideFlags: 0

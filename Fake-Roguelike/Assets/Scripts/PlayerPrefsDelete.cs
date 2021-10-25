@@ -8,6 +8,7 @@ public class PlayerPrefsDelete : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("Progress", 0);
+        PlayerPrefs.SetInt("ProgressSave", 0);
     }
 
     // Update is called once per frame

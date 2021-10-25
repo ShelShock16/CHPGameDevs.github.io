@@ -237,6 +237,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0437751, y: 3.863694}
   m_EdgeRadius: 0
+--- !u!1 &249953702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249953704}
+  - component: {fileID: 249953703}
+  m_Layer: 0
+  m_Name: ResetProgress (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &249953703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249953702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bd271c25b61a24fbaf1b35b6f6c2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &249953704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249953702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.2181053, y: 0.041953214, z: -11.627661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &296196730
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721691565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.138109, y: 0.62529546, z: -10}
+  m_LocalPosition: {x: 7.136468, y: 0.6252938, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1279798507}
@@ -973,8 +1016,9 @@ GameObject:
   m_Component:
   - component: {fileID: 808549652}
   - component: {fileID: 808549653}
+  - component: {fileID: 808549654}
   m_Layer: 0
-  m_Name: collider (9)
+  m_Name: escalera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1020,6 +1064,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48886293, y: 0.3582368}
   m_EdgeRadius: 0
+--- !u!114 &808549654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808549651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f5c5d342a750d4499ac1d8947986e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomScene: LevelSelector
+  progress: 0
+  progressReq: 0
 --- !u!1 &862965959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279798506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.91489124, y: 0.0007045269, z: 0}
+  m_LocalPosition: {x: 0.9165325, y: 0.00070619583, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2092119843}
@@ -1701,7 +1760,6 @@ GameObject:
   - component: {fileID: 1344109890}
   - component: {fileID: 1344109889}
   - component: {fileID: 1344109888}
-  - component: {fileID: 1344109887}
   - component: {fileID: 1344109886}
   - component: {fileID: 1344109885}
   m_Layer: 0
@@ -1760,26 +1818,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344109883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4c62a4d914553a4f93d5983a0c5837a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1f5c5d342a750d4499ac1d8947986e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nomScene: LevelSelector3
   progress: 18
   progressReq: 17
---- !u!114 &1344109887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344109883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d583cfc5501bb494aaaae4871f577e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numSalon: 0
-  Player: {fileID: 0}
 --- !u!50 &1344109888
 Rigidbody2D:
   serializedVersion: 4
@@ -2098,8 +2142,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1383963659}
   - component: {fileID: 1383963660}
+  - component: {fileID: 1383963661}
   m_Layer: 0
-  m_Name: collider (10)
+  m_Name: escalera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2145,6 +2190,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49325466, y: 0.3582368}
   m_EdgeRadius: 0
+--- !u!114 &1383963661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383963658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f5c5d342a750d4499ac1d8947986e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomScene: LevelSelector
+  progress: 0
+  progressReq: 0
 --- !u!1 &1415346457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,8 +2452,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1538679264}
   - component: {fileID: 1538679265}
+  - component: {fileID: 1538679266}
   m_Layer: 0
-  m_Name: GameObject (5)
+  m_Name: coso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2439,6 +2500,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72293496, y: 0.23163074}
   m_EdgeRadius: 0
+--- !u!114 &1538679266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538679263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0b8bb2069897149b06cbf7e2a6ba6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite2: {fileID: 21300000, guid: 482c1995bb4af104cb0b648332e95361, type: 3}
+  name: Sheina
+  txt1: Parece ser Ketchup
+  txt2: Parece ser Ketchup
+  txt3: Parece ser Ketchup
+  txt1ING: It seems to be Ketchup
+  txt2ING: It seems to be Ketchup
+  txt3ING: It seems to be Ketchup
+  txt: {fileID: 0}
+  txtname: {fileID: 0}
+  prof: {fileID: 0}
+  Canvas: {fileID: 0}
 --- !u!1 &1556466674
 GameObject:
   m_ObjectHideFlags: 0
