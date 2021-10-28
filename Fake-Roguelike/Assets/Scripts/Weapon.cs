@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject pencil;
     private float time = 0;
+    public AudioSource throwsound;
     void Update()
     {
         if (time > 0 && time < 0.3) time += Time.deltaTime;
@@ -24,5 +25,6 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Instantiate(pencil, firePoint.position, firePoint.rotation);
+        throwsound.Play();
     }
 }

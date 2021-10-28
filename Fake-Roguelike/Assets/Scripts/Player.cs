@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
+    public AudioSource eat;
+    public AudioSource walk;
+    public bool isMoving = false;
 
     private void Start()
     {
@@ -65,7 +68,7 @@ public class Player : MonoBehaviour
         render = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
-
+    
     }
 
     private void FixedUpdate()
@@ -73,7 +76,7 @@ public class Player : MonoBehaviour
         //ESTO ES UN DEBUG
         if (Input.GetButton("Debug"))
         {
-            PlayerPrefs.SetInt("Progress", 23);
+            PlayerPrefs.SetInt("Progress", 1);
         }
 
         if (hp == 0)
@@ -85,9 +88,34 @@ public class Player : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
+        // Walk Sound
 
-        // Reset MoveDelta
-        moveDelta = new Vector3(x,y,0);
+        if ((Input.GetAxisRaw("Vertical") != 0) || (Input.GetAxisRaw("Horizontal") != 0))
+        {
+            isMoving = true;
+            if (isMoving == true)
+            {
+                if (!walk.isPlaying)
+                {
+                    walk.Play();
+                }
+            }
+        }
+
+        if (((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") == 0)) || (Input.GetKey(KeyCode.Escape)))
+        {
+            isMoving = false;
+            if (isMoving == false)
+            {
+                if (walk.isPlaying)
+                {
+                    walk.Stop();
+                }
+            }
+        }
+
+            // Reset MoveDelta
+            moveDelta = new Vector3(x,y,0);
 
         // Change Sprite
 
@@ -190,12 +218,13 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag.Equals("Fruit") && hp<4)
         {
+            eat.Play();
             hp += 1;
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag.Equals("Fruit") )
         {
-           
+            eat.Play();
             Destroy(collision.gameObject);
         }
     }

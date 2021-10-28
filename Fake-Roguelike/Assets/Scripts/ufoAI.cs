@@ -8,6 +8,7 @@ public class ufoAI : MonoBehaviour
     public float speed, vision, time=0;
     public Transform player, ufo, shootingPoint;
     public GameObject explosion, bullet;
+    public AudioSource ufoshot;
 
     void Update()
     {
@@ -19,6 +20,7 @@ public class ufoAI : MonoBehaviour
             if (time == 0)
             {
                 time += Time.deltaTime;
+                ufoshot.Play();
                 Instantiate(bullet, shootingPoint.position, shootingPoint.rotation);
             }
         }

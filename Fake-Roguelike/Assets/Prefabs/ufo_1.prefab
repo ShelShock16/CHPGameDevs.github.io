@@ -126,6 +126,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 894915416725183580}
   explosion: {fileID: 2053802784553549526, guid: ee7d69feaae85fe43bd01ceacddcc378, type: 3}
   bullet: {fileID: 7132054359476776942, guid: 4d646368b6156b54b8631645c4a0b55b, type: 3}
+  ufoshot: {fileID: 0}
 --- !u!61 &894915416681254494
 BoxCollider2D:
   m_ObjectHideFlags: 0
