@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\CanScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Hole.cs" />
     <Compile Include="Assets\ChangeSize.cs" />
     <Compile Include="Assets\Scripts\BigDogAI.cs" />
     <Compile Include="Assets\Scripts\BusStreetMovement.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\ufoAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Profesores.cs" />
+    <Compile Include="Assets\MatPlayer.cs" />
     <Compile Include="Assets\Scripts\BulletSI.cs" />
     <Compile Include="Assets\Scripts\TimeDestroy.cs" />
     <Compile Include="Assets\scenePicker.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Assets\Scripts\GreenBulletScript.cs" />
     <Compile Include="Assets\Scripts\ViarLvl1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\RedSmallVertical.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\PlataformaMovement.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
@@ -102,6 +105,7 @@
     <Compile Include="Assets\Scripts\ActivateMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\MatGame.cs" />
     <Compile Include="Assets\Scripts\CubeMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\SummoningCones.cs" />
@@ -132,6 +136,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\NegSalon.cs" />
+    <Compile Include="Assets\RedSingle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Collition.cs" />
@@ -166,9 +171,11 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
+    <Compile Include="Assets\RedBigVertical.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\MatGame.cs" />
-    <Compile Include="Assets\MatPlayer.cs" />
+    <Compile Include="Assets\RedSmallHorizontal.cs" />
+    <Compile Include="Assets\RedBigHorizontal.cs" />
+    <Compile Include="Assets\RedMarker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -10,12 +10,12 @@ public class MatPlayer : MonoBehaviour
     void Start()
     {
         playerX = 6;
-        playerY = 9;
+        playerY = 10;
     }
 
     void Update()
     {
-        if (movementTime == 0)
+        if (movementTime == 0 && DialogueTrigger.dialogueActive == false)
         {
             Movement();
         }
@@ -23,7 +23,7 @@ public class MatPlayer : MonoBehaviour
         {
             movementTime += Time.deltaTime;
         }
-        if (movementTime > 0.20)
+        if (movementTime > 0.2)
         {
             movementTime = 0;
         }

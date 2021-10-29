@@ -17,6 +17,15 @@ TextureImporter:
   - first:
       213: -6814261231129227499
     second: RedBigHorizontal
+  - first:
+      213: 7398445472513639274
+    second: RedSmallHorizontal
+  - first:
+      213: 4798521600413064972
+    second: PurpleBigVertical
+  - first:
+      213: 5517969937866138498
+    second: PurpleBigHorizontal
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -182,11 +191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 44
+        y: 87
         width: 72
         height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,11 +212,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 161
+        y: 204
         width: 24
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,11 +233,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 131
+        y: 174
         width: 24
         height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,11 +254,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 77
-        y: 117
+        y: 160
         width: 22
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,11 +275,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 103
-        y: 164
+        y: 207
         width: 64
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +295,12 @@ TextureImporter:
       name: RedTrail
       rect:
         serializedVersion: 2
-        x: 168
-        y: 168
+        x: 102
+        y: 179
         width: 24
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +316,12 @@ TextureImporter:
       name: RedPoint
       rect:
         serializedVersion: 2
-        x: 193
-        y: 165
+        x: 127
+        y: 176
         width: 11
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,11 +338,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
+        y: 44
         width: 240
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,6 +350,69 @@ TextureImporter:
       bones: []
       spriteID: 51f83d78381ee61a0800000000000000
       internalID: -6814261231129227499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedSmallHorizontal
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 187
+        width: 48
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63c54765fe8ca660800000000000000
+      internalID: 7398445472513639274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleBigVertical
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 87
+        width: 72
+        height: 131
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fd8afc8f5c79240800000000000000
+      internalID: 4798521600413064972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleBigHorizontal
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 240
+        height: 40
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283abcb4c64c39c40800000000000000
+      internalID: 5517969937866138498
       vertices: []
       indices: 
       edges: []
