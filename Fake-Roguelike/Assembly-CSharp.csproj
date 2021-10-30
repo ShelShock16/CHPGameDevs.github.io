@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Gaddispawn.cs" />
     <Compile Include="Assets\Restore.cs" />
     <Compile Include="Assets\Scripts\BasketBallPlayerScript.cs" />
     <Compile Include="Assets\Scripts\PlataformaFalling.cs" />
@@ -176,7 +177,6 @@
     <Compile Include="Assets\Scripts\FirstDialogueTrigger.cs" />
     <Compile Include="Assets\RedBigVertical.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\Gaddispawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

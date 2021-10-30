@@ -82,33 +82,41 @@ public class ViarSalon : MonoBehaviour
 
             if (l == 0)
             {
-                string[] sentences =
-                {
-                "Hello!",
-                "Prof.",
-                "You won't believe what we just saw.",
-                "The army of dogs and hamsters?",
-                "What?",
-                "I mean… Yes, that.",
-                "Oh yeah, if I'm not mistaken they have something to do with the math test.",
-                "A few hours ago, those from 3BA entered the events room, and those creatures came out.",
-                "I guess they didn't do very well.",
-                "…",
-                "First of all, how did you get here ?",
-                "Didn't they even teach you how to fly?",
-                "IS IT POSSIBLE TO FLY?",
-                "So why do I need a bus? Or a car?",
-                "To avoid flying hamsters, obviously.",
-                "…",
-                "You should enter the UTU, you are going to be late.",
-                "And if you teach us to fly before?"
+            string[] sentences =
+            {
+                "Hi!",
+                "Viar! We were waiting for you,",
+                "How did you enter the room?",
+                "Through the window, obviously.",
+                "...",
+                "Well, what do we do now?",
+                "The first step when facing a project is planning.",
+                "You must analyze the situation you are in.",
+                "And look for an optimal solution.",
+                "In your case, you have to pass ten subjects in one day, how do you plan to do that?",
+                "We dunno.",
+                "Okay, you can start going to the classroom on the right.",
+                "I think the philosophy teacher is there.",
+                "She will give you an exam.",
+                "That easy? If we pass we approve?",
+                "I wouldn’t call it easy.",
+                "But that’s your problem.",
+                "Once you approve, you can go to the next classroom.",
+                "There are three classrooms on each floor, and three floors in total.",
+                "Excelent!",
+                "That 's our plan then.",
+                "What should we do for ADA?",
+                "Oh, don’t worry.",
+                "You have a plan to follow, that’s the purpose of my subject.",
+                "Try to focus on the other subjects.",
+                "Good luck, you will need it."
                 };
 
-                Dialogue.names = names;
-                Dialogue.sentences = sentences;
-                DialogueTrigger.dialogueActive = true;
-                PlayerPrefs.SetInt("Progress", 2);
-            }
+            Dialogue.names = names;
+            Dialogue.sentences = sentences;
+            DialogueTrigger.dialogueActive = true;
+            PlayerPrefs.SetInt("Progress", 2);
+        }
     }
 
     public void Update()

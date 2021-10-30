@@ -5877,6 +5877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28df744d171dad4c908c10be2758658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 1901598047}
+  time2: 0
+  redTime: 0
   firePoint: {fileID: 1891935726}
   pencil: {fileID: 5861234675429006786, guid: c5ffecde8ecf1954d9df358827774e1c, type: 3}
   speed: 10

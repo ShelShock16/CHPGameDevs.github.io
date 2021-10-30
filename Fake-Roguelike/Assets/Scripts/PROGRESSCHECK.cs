@@ -4,124 +4,149 @@ using UnityEngine;
 
 public class PROGRESSCHECK : MonoBehaviour
 {
-    public GameObject Nota1;
-    public GameObject Nota2;
-    public GameObject Nota3;
-    public GameObject Nota4;
-    public GameObject Nota5;
-    public GameObject Nota6;
-    public GameObject Nota7;
-    public GameObject Nota8;
-    public GameObject Nota9;
-    public GameObject Nota10;
+    public GameObject ADA;
+    public GameObject FILO;
+    public GameObject MULT;
+    public GameObject PROG;
+    public GameObject SOCIO;
+    public GameObject ART;
+    public GameObject NARR;
+    public GameObject GESTION;
+    public GameObject NEG;
+    public GameObject MATE;
     // Start is called before the first frame update
     void Start()
     {
-        Nota1.SetActive(false);
-        Nota2.SetActive(false);
-        Nota3.SetActive(false);
-        Nota4.SetActive(false);
-        Nota5.SetActive(false);
-        Nota6.SetActive(false);
-        Nota7.SetActive(false);
-        Nota8.SetActive(false);
-        Nota9.SetActive(false);
-        Nota10.SetActive(false);
+        if (ADA != null) ADA.SetActive(false);
+        if (FILO != null) FILO.SetActive(false);
+        if (MULT != null) MULT.SetActive(false);
+        if (PROG != null) PROG.SetActive(false);
+        if (SOCIO != null) SOCIO.SetActive(false);
+        if (ART != null) ART.SetActive(false);
+        if (NARR != null) NARR.SetActive(false);
+        if (GESTION != null) GESTION.SetActive(false);
+        if (NEG != null) NEG.SetActive(false);
+        if (MATE != null) MATE.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (ADA != null) {
         if (PlayerPrefs.GetInt("Progress") >= 2)
         {
-            Nota1.SetActive(true);
+            ADA.SetActive(true);
         }
         else
         {
-            Nota1.SetActive(false);
+            ADA.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 7)
+        if (FILO != null)
         {
-            Nota2.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 7)
+        {
+            FILO.SetActive(true);
         }
         else
         {
-            Nota2.SetActive(false);
+            FILO.SetActive(false);
+        }
         }
 
+          if (MULT != null) {
         if (PlayerPrefs.GetInt("Progress") >= 8)
         {
-            Nota3.SetActive(true);
+            MULT.SetActive(true);
         }
         else
         {
-            Nota3.SetActive(false);
+            MULT.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 14)
+        if (PROG != null)
         {
-            Nota4.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 14)
+        {
+            PROG.SetActive(true);
         }
         else
         {
-            Nota4.SetActive(false);
+            PROG.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 15)
+        if (SOCIO != null)
         {
-            Nota5.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 15)
+        {
+            SOCIO.SetActive(true);
         }
         else
         {
-            Nota5.SetActive(false);
+            SOCIO.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 17)
+        if (ART != null)
         {
-            Nota6.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 17)
+        {
+            ART.SetActive(true);
         }
         else
         {
-            Nota6.SetActive(false);
+            ART.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 21)
+        if (NARR != null)
         {
-            Nota7.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 21)
+        {
+            NARR.SetActive(true);
         }
         else
         {
-            Nota7.SetActive(false);
+            NARR.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 23)
+        if (GESTION != null)
         {
-            Nota8.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 23)
+        {
+            GESTION.SetActive(true);
         }
         else
         {
-            Nota8.SetActive(false);
+            GESTION.SetActive(false);
+        }
         }
 
-        if (PlayerPrefs.GetInt("Progress") >= 24)
+        if (NEG != null)
         {
-            Nota9.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 24)
+        {
+            NEG.SetActive(true);
         }
         else
         {
-            Nota9.SetActive(false);
+            NEG.SetActive(false);
         }
-
-        if (PlayerPrefs.GetInt("Progress") >= 25)
+        }
+        if (MATE != null)
         {
-            Nota10.SetActive(true);
+            if (PlayerPrefs.GetInt("Progress") >= 25)
+        {
+            MATE.SetActive(true);
         }
         else
         {
-            Nota10.SetActive(false);
+            MATE.SetActive(false);
         }
-
+        }
     }
 }

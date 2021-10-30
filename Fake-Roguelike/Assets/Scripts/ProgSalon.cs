@@ -44,9 +44,9 @@ public class ProgSalon : MonoBehaviour
                 string[] sentences =
                 {
                 //TRADUCIR ESTO A INGLÉS
-                "¿Hola?",
-                "Creo que no hay nadie.",
-                "Pero se supone que teníamos programación ahora."
+                "Hi?",
+                "I think there’s nobody here.",
+                "But we were supposed to have programming class now."
                 };
 
                 Dialogue.names = names;
@@ -96,11 +96,11 @@ public class ProgSalon : MonoBehaviour
                 string[] sentences =
                 {
                 //TRADUCIR ESTO A INGLÉS
-                "¡Felicidades! Aprobaron mi materia.",
-                "¿En serio no creen que todo es demasiado simple?",
-                "Lu, deja de inventarte cosas, nos quedan 5 materias.",
-                "¿Seguro que no fumaste lo mismo que la profe de filo?",
-                "Perdón, dormí 2 horas anoche, seguro son cosas mías.",
+                "Congratulations! You approved my subject..",
+                "Don’t you really think this is too easy?",
+                "Lu, stop imagining things, we still have 5 subjects to approve.",
+                "Are you sure you didn’t smoke the same that the philosophy teacher smoked?",
+                "Sorry, I only slept two hours yesterday, I need to calm down.",
                 };
 
                 Dialogue.names = names;
@@ -171,15 +171,15 @@ public class ProgSalon : MonoBehaviour
                 string[] sentences =
                 {
                 //TRADUCIR A INGLÉS
-                "¡Hola! Perdonen, vengo del médico.",
-                "Sí, claro, el médico.",
-                "En fin.",
-                "¿Cómo podemos aprobar tu materia?",
-                "Eehhhh.",
-                "¿Saben código binario?",
-                "¿Es eso de los unos y ceros?",
-                "Sí, básicamente.",
-                "Supongo que pueden hacer esta prueba entonces."
+                "Hi! Sorry, I come from the doctor.",
+                "Yeah, of course, the doctor.",
+                "Anyways.",
+                "How can we approve your subject?",
+                "Mmmm.",
+                "Do you know binary code?",
+                "That weird thing of the 1s and 0s?",
+                "Yes, basically..",
+                "I suppose you can do this test then."
                 };
 
                 Dialogue.names = names;

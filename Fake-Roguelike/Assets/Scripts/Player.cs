@@ -74,10 +74,10 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         //ESTO ES UN DEBUG
-        if (Input.GetButton("Debug"))
+       /* if (Input.GetButton("Debug"))
         {
-            PlayerPrefs.SetInt("Progress", 1);
-        }
+            PlayerPrefs.SetInt("Progress", 25);
+        }*/
 
         if (hp == 0)
         {

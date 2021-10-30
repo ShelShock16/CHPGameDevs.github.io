@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class SpaceInvadersPlayerMovement : MonoBehaviour
 {
+    public SpriteRenderer render;
+    public float time2 = 0, redTime = 0;
     public Transform firePoint;
     public GameObject pencil;
     private float time = 0;
@@ -22,6 +24,28 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (time2 > 0)
+        {
+            time2 += Time.deltaTime;
+            redTime += Time.deltaTime;
+            render.color = new Color(255, 0, 0, 128);
+            if (redTime > 0.25 && redTime < 0.5)
+            {
+                render.color = new Color(255, 255, 255, 255);
+            }
+            else if (redTime > 0.5)
+            {
+                render.color = new Color(255, 0, 0, 128);
+                redTime = 0;
+            }
+        }
+
+        if (time2 > 1)
+        {
+            time2 = 0;
+            render.color = new Color(255, 255, 255, 255);
+        } 
+
         float x = Input.GetAxis("Horizontal")*10 ;
         x *= Time.deltaTime;
         transform.Translate(x, 0f, 0f);
@@ -75,8 +99,9 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag=="Enemy")
+        if(collision.gameObject.tag=="Enemy" && time2 == 0)
         {
+            time2 += Time.deltaTime;
             life -= 1;
         }
     }
