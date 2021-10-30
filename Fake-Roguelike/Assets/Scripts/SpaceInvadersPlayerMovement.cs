@@ -50,14 +50,6 @@ public class SpaceInvadersPlayerMovement : MonoBehaviour
         x *= Time.deltaTime;
         transform.Translate(x, 0f, 0f);
 
-        if (time > 0 && time < 0.3) time += Time.deltaTime;
-        if (time > 0.3) time = 0;
-
-        if ( (Input.GetKeyDown(KeyCode.UpArrow)))
-        {
-            time += Time.deltaTime;
-            Shoot();
-        }
 
         if (life == 0)
         {
