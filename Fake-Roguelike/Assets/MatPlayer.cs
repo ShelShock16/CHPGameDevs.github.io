@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MatPlayer : MonoBehaviour
 {
-    public int playerX, playerY;
-    private float damageTime = 0, damageRedTime = 0, movementTime = 0;
+    public int playerX, playerY, direction;
+    private float damageTime = 0, damageRedTime = 0, movementTime = 0, animationTime = 0;
     public SpriteRenderer render;
-    void Start()
+
+    private void Start()
     {
         playerX = 6;
         playerY = 10;
     }
+
 
     void Update()
     {
@@ -60,6 +62,7 @@ public class MatPlayer : MonoBehaviour
             gameObject.transform.Translate(new Vector3(-0.24f, 0, 0));
             movementTime += Time.deltaTime;
             playerX--;
+            render.flipX = false;
         }
 
         if (Input.GetKey("d") && playerX < 10)
@@ -67,6 +70,7 @@ public class MatPlayer : MonoBehaviour
             gameObject.transform.Translate(new Vector3(0.24f, 0, 0));
             movementTime += Time.deltaTime;
             playerX++;
+            render.flipX = true;
         }
 
         if (Input.GetKey("s") && playerY < 10)

@@ -26,6 +26,15 @@ TextureImporter:
   - first:
       213: 5517969937866138498
     second: PurpleBigHorizontal
+  - first:
+      213: -1879950990561181972
+    second: RedLaser
+  - first:
+      213: 5727619355612066518
+    second: BlackHorizontal
+  - first:
+      213: 6858906197795430720
+    second: BlackVertical
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -191,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 87
+        y: 141
         width: 72
         height: 131
       alignment: 1
@@ -212,7 +221,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 204
+        y: 258
         width: 24
         height: 14
       alignment: 1
@@ -233,7 +242,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 174
+        y: 228
         width: 24
         height: 27
       alignment: 1
@@ -254,11 +263,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 77
-        y: 160
+        y: 213
         width: 22
-        height: 12
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0.85714287}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,7 +284,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 103
-        y: 207
+        y: 261
         width: 64
         height: 11
       alignment: 1
@@ -296,7 +305,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 102
-        y: 179
+        y: 233
         width: 24
         height: 3
       alignment: 0
@@ -317,7 +326,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 176
+        y: 230
         width: 11
         height: 9
       alignment: 0
@@ -338,7 +347,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 44
+        y: 98
         width: 240
         height: 40
       alignment: 1
@@ -359,7 +368,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 102
-        y: 187
+        y: 241
         width: 48
         height: 14
       alignment: 1
@@ -380,7 +389,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 169
-        y: 87
+        y: 141
         width: 72
         height: 131
       alignment: 1
@@ -401,7 +410,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
+        y: 55
         width: 240
         height: 40
       alignment: 1
@@ -413,6 +422,69 @@ TextureImporter:
       bones: []
       spriteID: 283abcb4c64c39c40800000000000000
       internalID: 5517969937866138498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLaser
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 43
+        width: 240
+        height: 9
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceef474d88219e5e0800000000000000
+      internalID: -1879950990561181972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHorizontal
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 242
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2b8eb25779c7f40800000000000000
+      internalID: 5727619355612066518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackVertical
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 140
+        width: 74
+        height: 133
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041625bc8dabf2f50800000000000000
+      internalID: 6858906197795430720
       vertices: []
       indices: 
       edges: []

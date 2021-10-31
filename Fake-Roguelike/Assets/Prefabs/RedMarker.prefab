@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 403429520401240433}
   - component: {fileID: 403429520401240434}
   - component: {fileID: 403429520401240435}
+  - component: {fileID: 60363361056449457}
   m_Layer: 0
   m_Name: RedMarker
   m_TagString: Untagged
@@ -69,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1646733253
-  m_SortingLayer: 6
+  m_SortingLayerID: -768314821
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -7347523395236467016, guid: 58760791c6f851f44889b8ec5d6b2dd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,3 +96,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c2b813ea689e6489c559e225d283d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laser: {fileID: 5790718124020093366, guid: fd35aafd20444164f9bb9ab78cb2ce48, type: 3}
+--- !u!111 &60363361056449457
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403429520401240436}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: daf96d7054105754eb7abbccb709805e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: daf96d7054105754eb7abbccb709805e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

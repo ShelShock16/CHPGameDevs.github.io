@@ -481,10 +481,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPortrait: {fileID: 1223719237}
   profe: Viar
-  lucielPortrait: {fileID: -7695903737138637985, guid: f997220aa2500b141bd736a7646108d2, type: 3}
-  eoPortrait: {fileID: 1143154409832169233, guid: f997220aa2500b141bd736a7646108d2, type: 3}
-  masiPortrait: {fileID: 5234057767361388256, guid: f997220aa2500b141bd736a7646108d2, type: 3}
-  brunPortrait: {fileID: -935890853147788825, guid: f997220aa2500b141bd736a7646108d2, type: 3}
+  lucielPortrait: {fileID: -1076798857232017392, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
+  eoPortrait: {fileID: -6251264694450606137, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
+  masiPortrait: {fileID: -2429903484840468220, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
+  brunPortrait: {fileID: 2450388083762637206, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
   profePortrait: {fileID: 21300000, guid: 2e07ca1b61f885a4dbaf1d61ad3752d0, type: 3}
   nameText: {fileID: 907779750}
   dialogueText: {fileID: 912759673}
@@ -821,6 +821,9 @@ MonoBehaviour:
   redSmallHorizontal: {fileID: 2565892961088357788, guid: 64c4c8aae408635488c1531b068d2669, type: 3}
   redBigHorizontal: {fileID: 2964981818987065052, guid: 985cd9a4597d3d8458c23cbcdf760d96, type: 3}
   redSingle: {fileID: 7443387912721276466, guid: 19607067ebbb4424eac8246822f69c9f, type: 3}
+  redMarker: {fileID: 403429520401240436, guid: fd52d698f731f4941a4479a65ae88ca0, type: 3}
+  purpleBigVertical: {fileID: 3686521953858427987, guid: f80603ee9466fcf47b852fa8bcb7889f, type: 3}
+  purpleBigHorizontal: {fileID: 3694712740993032279, guid: 569025c172dadf7419d11966923d8ad1, type: 3}
   alert: {fileID: 1896872344}
 --- !u!212 &1184126973
 SpriteRenderer:
@@ -1272,6 +1275,8 @@ GameObject:
   - component: {fileID: 1846809430}
   - component: {fileID: 1846809429}
   - component: {fileID: 1846809428}
+  - component: {fileID: 1846809432}
+  - component: {fileID: 1846809431}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1293,7 +1298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: 0
   playerY: 0
-  render: {fileID: 0}
+  direction: 0
+  render: {fileID: 1846809429}
 --- !u!212 &1846809429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1334,7 +1340,7 @@ SpriteRenderer:
   m_SortingLayerID: 312705055
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6138902535418948569, guid: 090af87ff1209fc419518aaa23fd19cb, type: 3}
+  m_Sprite: {fileID: 8079522395644957226, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1353,12 +1359,59 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846809427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: -0.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.112, y: -0.809, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1846809431
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846809427}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1846809432
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846809427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016763963, y: -0.021315724}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.26, y: 0.28}
+    newSize: {x: 0.26, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43254083, y: 0.23472044}
+  m_EdgeRadius: 0
 --- !u!1 &1896872343
 GameObject:
   m_ObjectHideFlags: 0
