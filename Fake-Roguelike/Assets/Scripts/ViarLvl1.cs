@@ -26,7 +26,7 @@ public class ViarLvl1 : MonoBehaviour
         if (time > 2)
         {
             PlayerPrefs.SetInt("Progress", 1);
-            SceneManager.LoadScene("LevelSelector");
+            SceneManager.LoadScene("To-LevelSelector");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

@@ -338,10 +338,12 @@ MonoBehaviour:
   masiPortrait: {fileID: 5234057767361388256, guid: f997220aa2500b141bd736a7646108d2, type: 3}
   brunPortrait: {fileID: -935890853147788825, guid: f997220aa2500b141bd736a7646108d2, type: 3}
   profePortrait: {fileID: 21300000, guid: 2e07ca1b61f885a4dbaf1d61ad3752d0, type: 3}
+  choferPortrait: {fileID: 0}
   nameText: {fileID: 1419601100}
   dialogueText: {fileID: 1453259265}
   end: 0
   voice: {fileID: 774448674}
+  ForBus: 0
 --- !u!4 &139700095
 Transform:
   m_ObjectHideFlags: 0
@@ -968,7 +970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273203325}
   - component: {fileID: 273203324}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: viar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3527,7 +3529,7 @@ GameObject:
   - component: {fileID: 860030375}
   - component: {fileID: 860030379}
   - component: {fileID: 860030378}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Flag
   m_TagString: floor
   m_Icon: {fileID: 0}
@@ -3614,7 +3616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860030374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.468, y: -1.18, z: 0}
+  m_LocalPosition: {x: 32.505, y: -1.18, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 273203325}

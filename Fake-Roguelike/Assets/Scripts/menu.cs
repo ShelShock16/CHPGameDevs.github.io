@@ -10,7 +10,7 @@ public class menu: MonoBehaviour
 
         if (PlayerPrefs.GetInt("Progress") == 0)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(31);
         }
         else
         {

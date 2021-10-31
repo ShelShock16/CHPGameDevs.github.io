@@ -13,7 +13,7 @@ public class WeaponSpaceInvaders : MonoBehaviour
         if (time > 0 && time < 0.3) time += Time.deltaTime;
         if (time > 0.3) time = 0;
 
-        if (time == 0 && (Input.GetKeyDown(KeyCode.W)))
+        if (time == 0 && (Input.GetKeyDown(KeyCode.UpArrow)))
         {
             time += Time.deltaTime;
             Shoot();

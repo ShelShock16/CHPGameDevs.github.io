@@ -7,12 +7,14 @@ public class DialogueManager : MonoBehaviour
 {
     public SpriteRenderer characterPortrait;
     public string profe;
-    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, profePortrait;
+    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, profePortrait,choferPortrait;
     public Text nameText, dialogueText;
     public bool end = false;
     private static Queue<string> sentences;
     private static Queue<string> names;
     public AudioSource voice;
+    public bool ForBus = false;
+    
     void Start()
     {
         sentences = new Queue<string>();
@@ -43,6 +45,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        
+
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -65,9 +69,24 @@ public class DialogueManager : MonoBehaviour
         } else if (name == profe)
         {
             characterPortrait.sprite = profePortrait;
+        } else if (name == "Chofer" && choferPortrait!=null)
+        {
+            characterPortrait.sprite = choferPortrait;
         }
         Debug.Log(name);
         Debug.Log(sentence);
+        if (ForBus == true && sentence == "AAAHHHHHH")
+        {
+            GameObject varGameObject = GameObject.Find("Bckground");
+            varGameObject.GetComponent<BusStreetMovement>().enabled = false;
+
+            varGameObject = GameObject.Find("Bckground (1)");
+            varGameObject.GetComponent<BusStreetMovement>().enabled = false;
+
+            varGameObject = GameObject.Find("Bckground (2)");
+            varGameObject.GetComponent<BusStreetMovement>().enabled = false;
+        }
+
         nameText.text = name;
         dialogueText.text = sentence;
         StopAllCoroutines();
