@@ -415,3 +415,116 @@ Fake-Roguelike/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
 Fake-Roguelike/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 Fake-Roguelike/ProjectSettings/EditorBuildSettings.asset
 Fake-Roguelike/UserSettings/EditorUserSettings.asset
+Fake-Roguelike/.vs/Fake-Roguelike/v16/.suo
+Fake-Roguelike/.vs/Fake-Roguelike/v16/.suo~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assembly-CSharp.csproj
+Fake-Roguelike/Assembly-CSharp.csproj~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/Hole.cs
+Fake-Roguelike/Assets/Hole.cs~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/MatGame.cs
+Fake-Roguelike/Assets/MatGame.cs~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/MatPlayer.cs
+Fake-Roguelike/Assets/MatPlayer.cs~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/Prefabs/BlackHorizontal.prefab
+Fake-Roguelike/Assets/Prefabs/BlackVertical.prefab
+Fake-Roguelike/Assets/Prefabs/Hole.prefab
+Fake-Roguelike/Assets/Prefabs/RedLaser.prefab
+Fake-Roguelike/Assets/Prefabs/RedMarker.prefab
+Fake-Roguelike/Assets/PurpleBigHorizontal.cs
+Fake-Roguelike/Assets/PurpleBigHorizontal.cs~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/PurpleBigVertical.cs
+Fake-Roguelike/Assets/PurpleBigVertical.cs~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/Scenes/LevelSelector3.unity
+Fake-Roguelike/Assets/Scenes/SalonMat.unity
+Fake-Roguelike/Assets/Scenes/SalonMat.unity~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Assets/Scripts/Player.cs
+Fake-Roguelike/Assets/Sprites/LevelSelector/piso3.png
+Fake-Roguelike/Library/ArtifactDB
+Fake-Roguelike/Library/ArtifactDB-lock
+Fake-Roguelike/Library/ArtifactDB-lock~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/ArtifactDB~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/Artifacts/02/028f8428726f6990468459c4f39d3e0d
+Fake-Roguelike/Library/Artifacts/02/02d0d13cbbc8c75b27338e1436d92fcb
+Fake-Roguelike/Library/Artifacts/06/0666f5e9220bbc80bb7a98595bc634d0
+Fake-Roguelike/Library/Artifacts/09/09ac839b38fd8b30bf69cbad2646f15b
+Fake-Roguelike/Library/Artifacts/10/10d2e643cf7f4a6fb79c0bc434c137af
+Fake-Roguelike/Library/Artifacts/12/12bf77e4dad647f38f3c28cfb81b035f
+Fake-Roguelike/Library/Artifacts/26/2660f492f7b2283ed95838aa3e532699
+Fake-Roguelike/Library/Artifacts/35/350690d887c02e2ae89276ab7f8b2e89
+Fake-Roguelike/Library/Artifacts/35/35882ed131dd00bb2822e0a679aabc75
+Fake-Roguelike/Library/Artifacts/52/5248731d91fad32ab05952f452a2858d
+Fake-Roguelike/Library/Artifacts/59/59fa954af978df239fa656d2ba6a256b
+Fake-Roguelike/Library/Artifacts/5a/5a2db2cbd765965227dc0bae040a42af
+Fake-Roguelike/Library/Artifacts/5c/5ca7102b9082f49f271969345b31bd69
+Fake-Roguelike/Library/Artifacts/60/6058a8274ebbf004f7d5d5f37ef342e3
+Fake-Roguelike/Library/Artifacts/88/886d30a01c729cf5b9990b7cef3174e1
+Fake-Roguelike/Library/Artifacts/98/98cbaab601908cd7e829cacea62924bf
+Fake-Roguelike/Library/Artifacts/9b/9b932e94387e53e2891025f74382a566
+Fake-Roguelike/Library/Artifacts/a3/a35a533adba09f7407b805132d580085
+Fake-Roguelike/Library/Artifacts/a3/a3ca24eef489baaac9eca04dda72b601
+Fake-Roguelike/Library/Artifacts/ad/adc51880abd74f6ce9d55b80bdf31ed8
+Fake-Roguelike/Library/Artifacts/bb/bba06d68788d921a3238c29ec158151e
+Fake-Roguelike/Library/Artifacts/d0/d036eec81678366fdfe14925c1c39e9f
+Fake-Roguelike/Library/Artifacts/d9/d98bb61128bfa41805dfd291ed6f596e
+Fake-Roguelike/Library/Artifacts/e2/e2bcea04c55235bcb10da3f82acb3d89
+Fake-Roguelike/Library/Artifacts/e4/e44dec4f709b70b2da77871b2fe51191
+Fake-Roguelike/Library/Artifacts/f5/f5e04634a2a3bb9fd6c9f43ba9341211
+Fake-Roguelike/Library/Artifacts/fd/fdea6e0ba8928d3b87456a1089ce3088
+Fake-Roguelike/Library/CurrentLayout-default.dwlt
+Fake-Roguelike/Library/CurrentLayout-default.dwlt~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/expandedItems
+Fake-Roguelike/Library/InspectorExpandedItems.asset
+Fake-Roguelike/Library/InspectorExpandedItems.asset~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/LastSceneManagerSetup.txt
+Fake-Roguelike/Library/LastSceneManagerSetup.txt~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/PackageManager/ProjectCache
+Fake-Roguelike/Library/PackageManager/ProjectCache.md5
+Fake-Roguelike/Library/PackageManager/ProjectCache.md5~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/PackageManager/ProjectCache~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/SceneVisibilityState.asset
+Fake-Roguelike/Library/SceneVisibilityState.asset~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/ScriptAssemblies/Assembly-CSharp.dll
+Fake-Roguelike/Library/ScriptAssemblies/Assembly-CSharp.dll~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/ScriptAssemblies/Assembly-CSharp.pdb
+Fake-Roguelike/Library/ScriptAssemblies/Assembly-CSharp.pdb~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/SourceAssetDB
+Fake-Roguelike/Library/SourceAssetDB-lock
+Fake-Roguelike/Library/SourceAssetDB-lock~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/SourceAssetDB~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/StateCache/PrefabStageHierarchy/69/693f48bf5517c9ca8f28fd8e2bc356b7.json
+Fake-Roguelike/Library/StateCache/PrefabStageHierarchy/9f/9f1e501f7bc3d7527f02c74fb27ebdcc.json
+Fake-Roguelike/Library/StateCache/SceneView/71/719d0e48ac0e06bb2a39089dd0519a45.json
+Fake-Roguelike/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json
+Fake-Roguelike/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Library/StateCache/SceneView/b7/b719860e1dc300b1699351fe1b771553.json
+Fake-Roguelike/Logs/ApiUpdaterCheck.txt
+Fake-Roguelike/Logs/AssetImportWorker0-prev.log
+Fake-Roguelike/Logs/AssetImportWorker0-prev.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/AssetImportWorker0.log
+Fake-Roguelike/Logs/AssetImportWorker0.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/AssetImportWorker1-prev.log
+Fake-Roguelike/Logs/AssetImportWorker2-prev.log
+Fake-Roguelike/Logs/shadercompiler-AssetImportWorker0.log
+Fake-Roguelike/Logs/shadercompiler-AssetImportWorker0.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe0.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe1.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe1.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe2.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe2.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe3.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe3.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe4.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe4.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe5.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe5.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe6.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe6.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe7.log
+Fake-Roguelike/Logs/shadercompiler-UnityShaderCompiler.exe7.log~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Fake-Roguelike/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/ProjectSettings/EditorBuildSettings.asset
+Fake-Roguelike/ProjectSettings/EditorBuildSettings.asset~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
+Fake-Roguelike/UserSettings/EditorUserSettings.asset
+Fake-Roguelike/UserSettings/EditorUserSettings.asset~parent of 47aa4a3c (Todo listo, falta dialogos y detalles)
