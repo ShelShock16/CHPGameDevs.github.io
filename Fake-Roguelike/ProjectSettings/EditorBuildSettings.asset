@@ -113,4 +113,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutsideMat.unity
     guid: d7905b792440f0349b8acd2b242c9513
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: b46d08a8e85a8da40893e9ab1ba23c6d
   m_configObjects: {}

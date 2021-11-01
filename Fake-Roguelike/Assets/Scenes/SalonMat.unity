@@ -614,6 +614,9 @@ MonoBehaviour:
   brunPortrait: {fileID: 2450388083762637206, guid: 7a844a8b9e065884291e43c47ca8a76a, type: 3}
   profePortrait: {fileID: 21300000, guid: c340a50e89605064f931138fc8005870, type: 3}
   choferPortrait: {fileID: 0}
+  Karen: {fileID: 21300000, guid: 0e15dc3c1ba8c53469bb84aabec282ff, type: 3}
+  Jaime: {fileID: 21300000, guid: 7a476bf2d4d83934da2e45ccb47845ec, type: 3}
+  KarenJaime: {fileID: 21300000, guid: c340a50e89605064f931138fc8005870, type: 3}
   nameText: {fileID: 907779750}
   dialogueText: {fileID: 912759673}
   end: 0

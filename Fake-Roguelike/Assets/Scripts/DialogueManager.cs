@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public SpriteRenderer characterPortrait;
     public string profe;
-    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, profePortrait,choferPortrait;
+    public Sprite lucielPortrait, eoPortrait, masiPortrait, brunPortrait, profePortrait,choferPortrait,Karen,Jaime, KarenJaime;
     public Text nameText, dialogueText;
     public bool end = false;
     private static Queue<string> sentences;
@@ -72,6 +72,18 @@ public class DialogueManager : MonoBehaviour
         } else if (name == "Chofer" && choferPortrait!=null)
         {
             characterPortrait.sprite = choferPortrait;
+        }
+        else if (name == "Jaime" && Jaime != null)
+        {
+            characterPortrait.sprite = Jaime;
+        }
+        else if (name == "Karen" && Karen != null)
+        {
+            characterPortrait.sprite = Karen;
+        }//Karen & Jaime
+        else if (name == "Karen & Jaime" && KarenJaime != null)
+        {
+            characterPortrait.sprite = KarenJaime;
         }
         Debug.Log(name);
         Debug.Log(sentence);

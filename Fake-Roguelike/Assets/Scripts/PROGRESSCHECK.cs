@@ -139,7 +139,7 @@ public class PROGRESSCHECK : MonoBehaviour
         }
         if (MATE != null)
         {
-            if (PlayerPrefs.GetInt("Progress") >= 25)
+            if (PlayerPrefs.GetInt("Progress") >= 35)
         {
             MATE.SetActive(true);
         }

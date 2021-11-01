@@ -151,4 +151,15 @@ public class Pause : MonoBehaviour
         SceneManager.LoadScene("SalonNeg");
 
     }
+
+    public void GoToLevel10()
+    {
+
+        PlayerPrefs.SetInt("ProgressSave", PlayerPrefs.GetInt("Progress"));
+        PlayerPrefs.SetInt("Progress", 24);
+        Time.timeScale = 1.0f;
+        isPaused = !isPaused;
+        SceneManager.LoadScene("SalonMat");
+
+    }
 }
