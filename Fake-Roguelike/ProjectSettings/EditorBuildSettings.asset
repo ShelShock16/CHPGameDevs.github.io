@@ -101,4 +101,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading Scenes/To-Bus.unity
     guid: cffa01b3325664743a6687d4840f78ef
+  - enabled: 1
+    path: Assets/Scenes/ViarWink.unity
+    guid: 585524dbd574eb9468d09c87d96ade9e
+  - enabled: 1
+    path: Assets/Scenes/SalonMat.unity
+    guid: 7f546480e76d8f549ab0d0ac5f48800a
+  - enabled: 1
+    path: Assets/Scenes/BusEnd.unity
+    guid: da99bcf472083d6479b279226f54d219
+  - enabled: 1
+    path: Assets/Scenes/OutsideMat.unity
+    guid: d7905b792440f0349b8acd2b242c9513
   m_configObjects: {}

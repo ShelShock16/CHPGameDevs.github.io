@@ -9,7 +9,7 @@ public class Hole : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time > 0.5)
+        if (time > 0.3)
         {
             Destroy(gameObject);
         }

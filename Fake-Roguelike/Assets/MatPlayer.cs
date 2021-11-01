@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MatPlayer : MonoBehaviour
 {
     public int playerX, playerY, direction;
-    private float damageTime = 0, damageRedTime = 0, movementTime = 0, animationTime = 0;
+    private float damageTime = 0, movementTime = 0;
     public SpriteRenderer render;
+    public GameObject explosion;
 
     private void Start()
     {
@@ -29,32 +31,23 @@ public class MatPlayer : MonoBehaviour
         {
             movementTime = 0;
         }
-    }
 
-    void Damage()
-    {
         if (damageTime > 0)
         {
             damageTime += Time.deltaTime;
-            damageRedTime += Time.deltaTime;
-            render.color = new Color(255, 0, 0, 128);
-            if (damageRedTime > 0.25 && damageRedTime < 0.5)
-            {
-                render.color = new Color(255, 255, 255, 255);
-            }
-            else if (damageRedTime > 0.5)
-            {
-                render.color = new Color(255, 0, 0, 128);
-                damageRedTime = 0;
-            }
         }
-
-        if (damageTime > 1)
+        if (damageTime > 0.2)
         {
-            damageTime = 0;
-            render.color = new Color(255, 255, 255, 255);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        damageTime += Time.deltaTime;
+        Instantiate(explosion, gameObject.transform.position, gameObject.transform.rotation);
+    }
+
     void Movement()
     {
         if (Input.GetKey("a") && playerX > 1)

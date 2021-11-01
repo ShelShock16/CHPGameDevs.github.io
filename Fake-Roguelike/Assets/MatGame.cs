@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MatGame : MonoBehaviour
@@ -7,10 +8,10 @@ public class MatGame : MonoBehaviour
     public int battleTime = 0;
     public float time = 0;
     public GameObject redSmallVertical, redBigVertical, redSmallHorizontal, redBigHorizontal, redSingle, redMarker, purpleBigVertical, purpleBigHorizontal;
-    public AudioSource alert;
+    public AudioSource alert, swish, music;
     void Start()
     {
-        //ESTO ES UN DEBUG
+        //NO BORRAR, ESTO SIRVE PARA DEBUGS
         PlayerPrefs.SetFloat("MatSpeed", 0.6f);
         PlayerPrefs.SetInt("Progress", 24);
 
@@ -21,6 +22,8 @@ public class MatGame : MonoBehaviour
         if (PlayerPrefs.GetInt("Progress") == 24 || PlayerPrefs.GetInt("Progress") == 25) StageOne();
         if (PlayerPrefs.GetInt("Progress") == 26 || PlayerPrefs.GetInt("Progress") == 27) StageTwo();
         if (PlayerPrefs.GetInt("Progress") == 28 || PlayerPrefs.GetInt("Progress") == 29 || PlayerPrefs.GetInt("Progress") == 30) StageThree();
+        if (PlayerPrefs.GetInt("Progress") == 31) End();
+        if (PlayerPrefs.GetInt("Progress") == 32 && !DialogueTrigger.dialogueActive) SceneManager.LoadScene("OutsideMat");
         if (battleTime >= 1) time += Time.deltaTime;
     }
 
@@ -66,7 +69,7 @@ public class MatGame : MonoBehaviour
             }
         }
 
-        if (PlayerPrefs.GetInt("Progress") == 25 && !DialogueTrigger.dialogueActive && battleTime == 0) { battleTime = 1; time = 0; }
+        if (PlayerPrefs.GetInt("Progress") == 25 && !DialogueTrigger.dialogueActive && battleTime == 0) { battleTime = 1; time = 0; music.Play(); music.loop = true; }
 
         //STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 STAGE 1 
 
@@ -80,11 +83,11 @@ public class MatGame : MonoBehaviour
         if (time > 2.4 && battleTime == 8) { Instantiate(redSmallHorizontal, new Vector3(-0.24f, -0.52f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
         if (time > 2.6 && battleTime == 9) { Instantiate(redSmallHorizontal, new Vector3(-0.24f, -0.65f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
         if (time > 2.8 && battleTime == 10) { Instantiate(redSmallHorizontal, new Vector3(-0.24f, -0.78f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
-        if (time > 4 && battleTime == 11) { Instantiate(redBigHorizontal, new Vector3(-1.2f, -0.52f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
-        if (time > 5.5 && battleTime == 12) { Instantiate(redBigHorizontal, new Vector3(-1.2f, -0.13f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
-        if (time > 6.5 && battleTime == 13) { Instantiate(redBigHorizontal, new Vector3(-1.2f, 0.26f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
+        if (time > 3 && battleTime == 11) { Instantiate(redBigHorizontal, new Vector3(-1.2f, -0.52f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
+        if (time > 4 && battleTime == 12) { Instantiate(redBigHorizontal, new Vector3(-1.2f, -0.13f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
+        if (time > 5 && battleTime == 13) { Instantiate(redBigHorizontal, new Vector3(-1.2f, 0.26f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
 
-        if (time > 8 && battleTime == 14)
+        if (time > 6.5 && battleTime == 14)
         {
             Instantiate(redSmallVertical, new Vector3(-1.2f, 0.39f, 0), gameObject.transform.rotation);
             Instantiate(redSmallVertical, new Vector3(-1.2f, -0.13f, 0), gameObject.transform.rotation);
@@ -125,7 +128,7 @@ public class MatGame : MonoBehaviour
 
             alert.Play();
         }
-        if (time > 10 && battleTime == 15)
+        if (time > 7.5 && battleTime == 15)
         {
             Instantiate(redBigHorizontal, new Vector3(-1.2f, 0.39f, 0), gameObject.transform.rotation);
             Instantiate(redBigHorizontal, new Vector3(-1.2f, -0.52f, 0), gameObject.transform.rotation);
@@ -133,13 +136,13 @@ public class MatGame : MonoBehaviour
             alert.Play();
         }
 
-        if (time > 11 && battleTime == 16) { Instantiate(redBigHorizontal, new Vector3(-1.2f, 0f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
+        if (time > 8.5 && battleTime == 16) { Instantiate(redBigHorizontal, new Vector3(-1.2f, 0f, 0), gameObject.transform.rotation); battleTime++; alert.Play(); }
 
-        if (time > 13.6 && battleTime == 17)
+        if (time > 10 && battleTime == 17)
         {
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
             battleTime++;
-            alert.Play();
+            swish.Play();
             PlayerPrefs.SetInt("Progress", 26);
         }
     }
@@ -196,7 +199,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, -0.27f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.53f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.79f, 0), gameObject.transform.rotation);
-            alert.Play();
+            swish.Play();
             battleTime++;
         }
 
@@ -207,7 +210,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, -0.14f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.40f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.66f, 0), gameObject.transform.rotation);
-            alert.Play();
+            swish.Play();
             battleTime++;
         }
 
@@ -223,6 +226,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, -0.79f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(0.48f, 0.39f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             alert.Play();
             battleTime++;
         }
@@ -237,6 +241,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(-0.24f, 0.39f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             alert.Play();
             battleTime++;
         }
@@ -251,6 +256,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(-0.48f, 0.39f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             alert.Play();
             battleTime++;
         }
@@ -265,6 +271,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(-1.2f, 0.39f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             alert.Play();
             battleTime++;
         }
@@ -279,6 +286,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(-0.48f, 0.39f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             alert.Play();
             battleTime++;
         }
@@ -292,15 +300,13 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, -0.27f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.14f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, 0.00f, 0), gameObject.transform.rotation);
-            Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
 
-            alert.Play();
+            swish.Play();
             battleTime++;
         }
 
         if (time > 12 && battleTime == 9)
         {
-            Instantiate(redMarker, new Vector3(-1.9f, -0.53f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.40f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.27f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, -0.14f, 0), gameObject.transform.rotation);
@@ -309,7 +315,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
 
-            alert.Play();
+            swish.Play();
             battleTime++;
         }
 
@@ -323,7 +329,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
-            alert.Play();
+            swish.Play();
             battleTime++;
         }
 
@@ -340,6 +346,7 @@ public class MatGame : MonoBehaviour
             Instantiate(redBigVertical, new Vector3(-1.2f, 0.39f, 0), gameObject.transform.rotation);
             Instantiate(redBigVertical, new Vector3(0.48f, 0.39f, 0), gameObject.transform.rotation);
             alert.Play();
+            swish.Play();
             battleTime++;
         }
 
@@ -360,7 +367,8 @@ public class MatGame : MonoBehaviour
 
             string[] names =
             {
-            "StageThree"
+            "Karen & Jaime",
+            "Luciel"
             };
 
 
@@ -368,7 +376,8 @@ public class MatGame : MonoBehaviour
             {
                 string[] sentences =
                 {
-                "StageThree"
+                "Karen & Jaime",
+                "Luciel"
                 };
 
                 Dialogue.names = names;
@@ -383,7 +392,7 @@ public class MatGame : MonoBehaviour
                 string[] sentences =
                 {
                 //TRADUCIR ESTO A INGLÉS
-                "StageThree"
+                "texto"
                 };
 
                 Dialogue.names = names;
@@ -454,6 +463,7 @@ public class MatGame : MonoBehaviour
 
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             battleTime++;
 
             alert.Play();
@@ -506,7 +516,7 @@ public class MatGame : MonoBehaviour
 
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
 
-
+            swish.Play();
             battleTime++;
 
             alert.Play();
@@ -560,6 +570,7 @@ public class MatGame : MonoBehaviour
 
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
 
+            swish.Play();
             battleTime++;
 
             alert.Play();
@@ -612,8 +623,10 @@ public class MatGame : MonoBehaviour
 
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
 
+
             battleTime++;
 
+            swish.Play();
             alert.Play();
 
         }
@@ -650,6 +663,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
+            swish.Play();
             alert.Play();
         }
 
@@ -673,8 +687,10 @@ public class MatGame : MonoBehaviour
             Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
             Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
 
+
             battleTime++;
 
+            swish.Play();
             alert.Play();
         }
 
@@ -696,7 +712,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 16 && battleTime == 11)
@@ -707,7 +723,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 17 && battleTime == 12)
@@ -718,7 +734,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 18 && battleTime == 13)
@@ -729,7 +745,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 19 && battleTime == 14)
@@ -739,7 +755,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 20 && battleTime == 15)
@@ -749,7 +765,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 20 && battleTime == 16)
@@ -759,7 +775,7 @@ public class MatGame : MonoBehaviour
 
             battleTime++;
 
-            alert.Play();
+            swish.Play();
         }
 
         if (time > 22 && battleTime == 17)
@@ -771,20 +787,48 @@ public class MatGame : MonoBehaviour
             alert.Play();
         }
 
+        if (time > 24 && battleTime == 18)
+        {
+            PlayerPrefs.SetInt("Progress", 31);
+        }
     }
 
-    public void MarcadoresEnOrden()
+    void End()
     {
-        Instantiate(redMarker, new Vector3(-1.9f, -0.79f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, -0.66f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, -0.53f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, -0.40f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, -0.27f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, -0.14f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, 0.00f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, 0.12f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, 0.25f, 0), gameObject.transform.rotation);
-        Instantiate(redMarker, new Vector3(-1.9f, 0.38f, 0), gameObject.transform.rotation);
-    }
+        int l = PlayerPrefs.GetInt("Lang");
 
+        string[] names =
+        {
+            "End"
+            };
+
+
+        if (l == 1)
+        {
+            string[] sentences =
+            {
+                "End"
+            };
+
+            Dialogue.names = names;
+            Dialogue.sentences = sentences;
+            DialogueTrigger.dialogueActive = true;
+            PlayerPrefs.SetInt("Progress", 32);
+        }
+
+
+        if (l == 0)
+        {
+            string[] sentences =
+            {
+                //TRADUCIR ESTO A INGLÉS
+                "End"
+            };
+
+            Dialogue.names = names;
+            Dialogue.sentences = sentences;
+            DialogueTrigger.dialogueActive = true;
+            PlayerPrefs.SetInt("Progress", 32);
+        }
+    }
 }
